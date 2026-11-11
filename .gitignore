@@ -1,0 +1,16 @@
+node_modules/
+.npm-cache/
+.env
+.env.*
+!.env.example
+/establecimientos.geojson
+/browser-profile/
+/playwright/.auth/
+/test-results/
+/playwright-report/
+logs/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+/cartas/

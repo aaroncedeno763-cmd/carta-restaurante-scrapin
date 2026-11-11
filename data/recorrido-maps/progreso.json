@@ -1,0 +1,3215 @@
+{
+  "version": 1,
+  "items": {
+    "1": {
+      "requestHash": "ffe7171c59bbc263746540f8c505d5dca072eab29e7fbf97a4506438462f5560",
+      "signature": "R/1",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:43:43.397Z"
+    },
+    "2": {
+      "requestHash": "79363e32c12fd5dbbb67be6210bf1aeeaad3327528a951d7a826268f8b0d1e7b",
+      "signature": "R/1001",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:43:57.248Z"
+    },
+    "3": {
+      "requestHash": "4f3c6ceb631a65f585f2072736473e88d83ad6fcd5d0269015f69b42a4bf1cbe",
+      "signature": "R/1004",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:44:43.720Z"
+    },
+    "4": {
+      "requestHash": "516528a32ac186edeb433ff4ea9537f4808b25725db9f1b0c9f88514d06ce149",
+      "signature": "R/1011",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:44:58.378Z"
+    },
+    "5": {
+      "requestHash": "e5811dff64744e50fadf15d12ac463190a9a2a618be8928d4b6ae292c58de08b",
+      "signature": "R/1014",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:45:43.560Z"
+    },
+    "6": {
+      "requestHash": "2e24710b944dd272e6b35e7684ce12df733ce4a6b8c995bd661b1e86c39e685e",
+      "signature": "R/1018",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:45:58.576Z"
+    },
+    "7": {
+      "requestHash": "a0c40c5e1a9cf865494cdf47e61f7b421d1b41af42772e3fb263411e9b1857df",
+      "signature": "R/1023",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:46:06.545Z"
+    },
+    "8": {
+      "requestHash": "fead62124088e5a1cf4c3b30244c5a7032701fd60f6cf4a16dc196b397d7819c",
+      "signature": "R/1024",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:46:17.532Z"
+    },
+    "9": {
+      "requestHash": "42855e5ae75692e254f38122b4ff471d5dfcc1053dbd9493b90a7a7761dbb441",
+      "signature": "R/1025",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:46:25.518Z"
+    },
+    "10": {
+      "requestHash": "a47bd9b6cf6dd07794cb819a66e59b75e4b13deecb395c17bbd4298f520ef888",
+      "signature": "R/1026",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:46:40.098Z"
+    },
+    "11": {
+      "requestHash": "d3a0df6e4092dfd0395af22dcbc91fa2ae211261cec89cbb65ceb8c3d9a10af9",
+      "signature": "R/1027",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:48:45.788Z"
+    },
+    "12": {
+      "requestHash": "fe4b415f70be710599b6110b52d33cffb19bd5abdd8f7a90a4b3ea602380c04a",
+      "signature": "R/1032",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:48:54.458Z"
+    },
+    "13": {
+      "requestHash": "df861a064d8a14493ecf0de185b95ec130738afdb1f590b3bedc80b62b2addc5",
+      "signature": "R/1037",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:49:39.444Z"
+    },
+    "14": {
+      "requestHash": "3a50cdd8cb93e2cc489b52ea1c714c538e900618ab2c5c49c43c5211d85b1365",
+      "signature": "R/1044",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:08:25.174Z"
+    },
+    "15": {
+      "requestHash": "d772af06065efd3be8d4567f5cc56b6a9c43d2ef6fab921ec21710f5fe155192",
+      "signature": "R/1047",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:49:53.852Z"
+    },
+    "16": {
+      "requestHash": "bbe0169760daaa3fff6da04fc2b70ba336dc7c8b9b1c948acb143cbc22db2454",
+      "signature": "R/1049",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:50:07.720Z"
+    },
+    "17": {
+      "requestHash": "c0d680f387cfff9b4e2e8d96174b0c2a806043a9aa129e7d8128aef9eaebb019",
+      "signature": "R/1051",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:50:23.931Z"
+    },
+    "18": {
+      "requestHash": "86a3d7110ad26fb78c59a8c711c75ddfa25112e46d13c1f33c5e91993cb885f2",
+      "signature": "R/1052",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:50:31.704Z"
+    },
+    "19": {
+      "requestHash": "068d85ec0cb1dd73146890841a928210950ae29c9f1fdd9fe96d3ca472784586",
+      "signature": "R/1060",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:50:39.973Z"
+    },
+    "20": {
+      "requestHash": "5326874ce31894d0c5a4b8b989c6ea83703b2cee02d0d36e1b25f594f21e215f",
+      "signature": "R/1061",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T11:50:54.163Z"
+    },
+    "21": {
+      "requestHash": "1bbbf2b9f1b969b929430ce3ba5137a5c7e4d78b3d03f22c72321d5b76074573",
+      "signature": "R/1064",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:08:49.088Z"
+    },
+    "22": {
+      "requestHash": "57b977ab557514a1623bddc467010cdc0db083618616ca98ae01eb7f2df2e8a7",
+      "signature": "R/1066",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:08:57.843Z"
+    },
+    "23": {
+      "requestHash": "9a890888fc0a9f09f37cb7f32ce29d7a16db498e82714033c1c3c2ddfc286feb",
+      "signature": "R/1069",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:09:24.723Z"
+    },
+    "24": {
+      "requestHash": "de0bade8082b33e732fe401d68c7a601a258905d95781518e458a42b458b77bd",
+      "signature": "R/1075",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:09:48.364Z"
+    },
+    "25": {
+      "requestHash": "376d7c60352c05b26bb8cbf868f070aaf2bc0bfb0745e7850209741d5caa213e",
+      "signature": "R/1076",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:10:21.961Z"
+    },
+    "26": {
+      "requestHash": "d96edca2be533f16e1c84cb8430e51909f2fa89f976682a569e6e39a87a78b5e",
+      "signature": "R/1080",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:10:46.234Z"
+    },
+    "27": {
+      "requestHash": "e1a180c8b6b942709042d63bbfa9a218301a52e8377cff3e29f7e292582f3408",
+      "signature": "R/1082",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:10:54.070Z"
+    },
+    "28": {
+      "requestHash": "85bb9a094b1047d1263a31730ec2fa539ffc7572f6c19847a6bf5918f3a06f79",
+      "signature": "R/1083",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:11:18.158Z"
+    },
+    "29": {
+      "requestHash": "d2f54f998f2e7bde7577742d86f8a55b82a244431e5ce5d810ef76f9eafe2f7e",
+      "signature": "R/1084",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:11:31.820Z"
+    },
+    "30": {
+      "requestHash": "73a4d25063d9816db5b0a68e8afe4e743e2fd83d7b117151160116866b65a836",
+      "signature": "R/1090",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:11:47.331Z"
+    },
+    "31": {
+      "requestHash": "521cb09f052d5343f054684a4f2e7f8e2fd72fde99598f7b03fe2a0e74ec4841",
+      "signature": "R/1096",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:12:02.821Z"
+    },
+    "32": {
+      "requestHash": "3e646ed60e0b1be09b6f5c629cf3e5a4d1b4e191713360510b476228a44dc31f",
+      "signature": "R/1101",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:12:10.495Z"
+    },
+    "33": {
+      "requestHash": "0435b26ca3851d99a374150d8dd46f4e4b5e42d8636cabbc7ad5908535000cd4",
+      "signature": "R/1103",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:12:34.403Z"
+    },
+    "34": {
+      "requestHash": "20139c158b8cd9f664290367d17f48edad3c195d3700ae6d4b0673e74a303b1f",
+      "signature": "R/1104",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:13:07.822Z"
+    },
+    "35": {
+      "requestHash": "4d88516670ce9bff40dce87dfe0c92f0403f9c5e17556a7d9637392bfdf7970c",
+      "signature": "R/1107",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:13:15.705Z"
+    },
+    "36": {
+      "requestHash": "c103b781f47f3dcbce536b240e75f4c0c0c7fd3ff1562d95f89dca1af4d658c3",
+      "signature": "R/1108",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:13:30.230Z"
+    },
+    "37": {
+      "requestHash": "176a461722da888cbd07f1747d9babb3d008c6bd92579fe612eddec2e67d1d08",
+      "signature": "R/1113",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:14:28.236Z"
+    },
+    "38": {
+      "requestHash": "295301c80c603db5a3eb3d37de3821cfdd5e55965d8b964fab9b8f6942b255d0",
+      "signature": "R/1115",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:14:35.892Z"
+    },
+    "39": {
+      "requestHash": "603ee35ceb138c771e2c44e691cdf3895cac63b5d5b3fe978eddb54252c642b8",
+      "signature": "R/1117",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:14:43.621Z"
+    },
+    "40": {
+      "requestHash": "5b24cc8d4323d9e3eb1dff14e41bc310cdd37413862b08d81a064b2665292d76",
+      "signature": "R/1120",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:15:06.231Z"
+    },
+    "41": {
+      "requestHash": "57e48e6802fc32c790b0960f3d672ad9e3de100962d9fcdb756f6c4acbd0203c",
+      "signature": "R/1121",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:15:30.212Z"
+    },
+    "42": {
+      "requestHash": "54a76818c9d0074dee8486df11dcd0949edd5bf8ec9cc8c41b3b42c9ad16556e",
+      "signature": "R/1122",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:16:20.773Z"
+    },
+    "43": {
+      "requestHash": "0c873477b4364790d5addc51b627eab1f540169eadb59626c7521f2f76aa816c",
+      "signature": "R/1123",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:16:28.840Z"
+    },
+    "44": {
+      "requestHash": "712b51d144bb68b8617d7612a7552fb471dfe95912811c53e5e30fdb6059cf0c",
+      "signature": "R/1126",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:16:36.439Z"
+    },
+    "45": {
+      "requestHash": "5c60700df4b716aa3dd9023d3e48327591e1b1f5a63094dca2957ca8056d0081",
+      "signature": "R/1127",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:17:14.515Z"
+    },
+    "46": {
+      "requestHash": "763795a09f98134c524614ffbf61545eead3db283183f5df88e9d4dfe4061326",
+      "signature": "R/1128",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:17:22.121Z"
+    },
+    "47": {
+      "requestHash": "67761beeff0f81c0152b4022aaeea4c58f1d2ec46813fa21435db86be2afb797",
+      "signature": "R/113",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:17:48.038Z"
+    },
+    "48": {
+      "requestHash": "6852a82a039b05ad9f28ab1d1e1cf226b94f41b227e3e4fa1f30470a982fb1a7",
+      "signature": "R/1135",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:18:21.676Z"
+    },
+    "49": {
+      "requestHash": "58db0b3613200df2c20d8ee1e4da840187568da5e260929599dcd6d2c15c3387",
+      "signature": "R/1136",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:18:29.547Z"
+    },
+    "50": {
+      "requestHash": "101db98e522395f3df6095352820f54e93dec5864d2e533e6bfa0b87f76f2b83",
+      "signature": "R/1139",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:18:45.365Z"
+    },
+    "51": {
+      "requestHash": "ac8b8b5712cd94489c7d348433b884cf460c403d8362737635a6b07c3c3ca986",
+      "signature": "R/114",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:19:04.516Z"
+    },
+    "52": {
+      "requestHash": "e5e22651f4aa44a273a2b98f6a8967edf31e6eb6ac8c419371841bb4940119d7",
+      "signature": "R/1140",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:19:20.055Z"
+    },
+    "53": {
+      "requestHash": "5fe79241400710fc7591826f3d59915971b5304069c6621903d302b6769d4514",
+      "signature": "R/1142",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:19:27.662Z"
+    },
+    "54": {
+      "requestHash": "9660b9dc22c5316d8f29f9c725bcea8a9508c0ce07beb47c7856aa4e31343037",
+      "signature": "R/1144",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:19:48.915Z"
+    },
+    "55": {
+      "requestHash": "2438edc9a36fdcdb88cd69c24c2b2ff449faa0ac93fbc63baad367ad28d2a2b6",
+      "signature": "R/1145",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:19:57.013Z"
+    },
+    "56": {
+      "requestHash": "674e43bdf5c098b0f7b3aad97a72942fd4102ee0b8a20ede2fbff5db8b6d0d20",
+      "signature": "R/1146",
+      "status": "error",
+      "updatedAt": "2026-11-11T12:20:22.591Z"
+    },
+    "57": {
+      "requestHash": "f6aa4d0c91533031b342d103e353ca7e457c22bc09c8d70b2821fd1b2dfe10b8",
+      "signature": "R/1150",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:20:30.484Z"
+    },
+    "58": {
+      "requestHash": "d21698ae30e0c4365d55465599877d16008753a5e60799abd0cccc04dcbe4410",
+      "signature": "R/1152",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:20:38.413Z"
+    },
+    "59": {
+      "requestHash": "b4ecdcba8473d70f37242f911d5f1a8de446695582e85828c0005ee4f9a09475",
+      "signature": "R/1153",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:20:46.194Z"
+    },
+    "60": {
+      "requestHash": "35d83af933e0f99a549f6a79d015cf20f97deadb2e94a6a377a6de25087f39a4",
+      "signature": "R/1159",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:21:10.189Z"
+    },
+    "61": {
+      "requestHash": "fb4deee18437aae9809b7160b97df6992d6c2394fe366755673d7d278224d7af",
+      "signature": "R/1160",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:21:55.569Z"
+    },
+    "62": {
+      "requestHash": "ae79abb96721350db5451bbc80b9c7695f9bc7ec5dcece9dc28c45c5a8320101",
+      "signature": "R/118",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:22:29.588Z"
+    },
+    "63": {
+      "requestHash": "33cf2aec0b13fa0266d0ddc588bd49acd3efb9c29986b3cb6e76db75d32585c8",
+      "signature": "R/1183",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:22:37.581Z"
+    },
+    "64": {
+      "requestHash": "c11d99fc1dcc1081bbf70e7d4b49219bfb5b977a8b87be396cdfd65e90b54a7b",
+      "signature": "R/1185",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:22:45.196Z"
+    },
+    "65": {
+      "requestHash": "362630a8122ca304768cec18243f223991fb639f1d53d22187b8ae1ada7405b8",
+      "signature": "R/1186",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:22:52.756Z"
+    },
+    "66": {
+      "requestHash": "06a403f5006b8a60db3792542aa90fda40998370b64c86756e62c4a0b259a399",
+      "signature": "R/1187",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:23:16.980Z"
+    },
+    "67": {
+      "requestHash": "e7fa19fef89afd22f2064b0460306ba7edf7359ddafbc55d31ba0a52d70484d9",
+      "signature": "R/119",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:23:32.623Z"
+    },
+    "68": {
+      "requestHash": "234d5ba984caf3915f89916f045bbe524ba886a95b6b4709144d05b7d4d173a1",
+      "signature": "R/1191",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:23:45.836Z"
+    },
+    "69": {
+      "requestHash": "df1576288ed10fcb2062ba5b5754061a45d6599605f413dc14c080dda7e61f43",
+      "signature": "R/1194",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:24:08.119Z"
+    },
+    "70": {
+      "requestHash": "05b8957e260f01abe9d558f7401c8c848ff4948ec03f1e211cd432f8a41a6776",
+      "signature": "R/12",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:24:21.010Z"
+    },
+    "71": {
+      "requestHash": "330bfdc0a4ef7482fd382288a3572204a04c5b57264fe9af88d572ad7dc03ea0",
+      "signature": "R/120",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:24:55.053Z"
+    },
+    "72": {
+      "requestHash": "e1bd7060678842921eb1ac1086f45c7cd9d7b30831757d6e2bf532727c32c8fb",
+      "signature": "R/121",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:25:46.095Z"
+    },
+    "73": {
+      "requestHash": "b1440716c941bcecb0510de131191024d6119b0dd8a8e06e2071c0838476fcfb",
+      "signature": "R/1212",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:25:53.728Z"
+    },
+    "74": {
+      "requestHash": "381eefc47d115eed38a37054e4f7dcfa2b092e72253feafa2b8761d35b062c09",
+      "signature": "R/1215",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:26:07.762Z"
+    },
+    "75": {
+      "requestHash": "ce34d3b63602de183aebf049bd87e30c9f96a51e741bdb00306158d300ba78c6",
+      "signature": "R/1217",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:26:21.215Z"
+    },
+    "76": {
+      "requestHash": "57822cc5176fc73a276e5ac9496d4d335b78b34f2eae00ca15c7b64a3cd3810a",
+      "signature": "R/1218",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:26:28.818Z"
+    },
+    "77": {
+      "requestHash": "9e5b108dd1a6fbe932c60bdcfe89158cc32c6fbeee67fc13fbc38a532222584c",
+      "signature": "R/122",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:26:42.124Z"
+    },
+    "78": {
+      "requestHash": "0a730406d7265ad3c0f94a6969e885dbf802f562798342dcc06776dd1a2bd2f4",
+      "signature": "R/1220",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:26:57.682Z"
+    },
+    "79": {
+      "requestHash": "ba9674a66d33ef31b5db5fe5b8812babc34be232b2fac8eb60566e441338c5ab",
+      "signature": "R/1233",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:27:08.938Z"
+    },
+    "80": {
+      "requestHash": "9e09002939b61f533f499bf6d7baa86de0850f955b072ec11c10df759f3a3099",
+      "signature": "R/1234",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:27:22.550Z"
+    },
+    "81": {
+      "requestHash": "13dd9a8190801a3b1dc6e853277e2621b2fb1b8585bc114df6cdf3bcebad1292",
+      "signature": "R/1235",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:27:30.444Z"
+    },
+    "82": {
+      "requestHash": "61938225f40bd87d589b606b8da03b8a865ee952d8dea0a0733d5c6812a742dc",
+      "signature": "R/1238",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:27:44.029Z"
+    },
+    "83": {
+      "requestHash": "b5d7fdfa0f5a32158861cf30f21f13404a901edfe4e3ac3e803134453c9b004b",
+      "signature": "R/1239",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:28:18.278Z"
+    },
+    "84": {
+      "requestHash": "06ebee274938d78414aba720195ce89f4d8fe2b2d82b7fe6173b9dba15adeb01",
+      "signature": "R/124",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:28:25.962Z"
+    },
+    "85": {
+      "requestHash": "c0a6fe1306de4a1f388b0dc69654685f082553aef2e5755bb0040cf25aa9ec62",
+      "signature": "R/1240",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:28:51.932Z"
+    },
+    "86": {
+      "requestHash": "55552e760ff5cb82e6df0efb24b2e455a376e253cdeca367bfb54692b15083e0",
+      "signature": "R/1242",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:29:05.354Z"
+    },
+    "87": {
+      "requestHash": "b56a6c18efdd38557f3edf7632a78b0a626b27858e0d94b4b6932471cca6d5dd",
+      "signature": "R/1245",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:29:29.229Z"
+    },
+    "88": {
+      "requestHash": "ba87ad781fa8329d436f8557a99827e5438e015cc0a7a0147d7ac52e74f2d923",
+      "signature": "R/1246",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:30:12.980Z"
+    },
+    "89": {
+      "requestHash": "3e41fc079962f9577ffe83d54ae1bcdcf84772a5a99970f389638a1939eb6984",
+      "signature": "R/1248",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:30:26.798Z"
+    },
+    "90": {
+      "requestHash": "c1e629656c3e5bd14edc4ba92df351eda9b3214bb8a03a0a98fa0aa2fbfaf62e",
+      "signature": "R/125",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:30:34.597Z"
+    },
+    "91": {
+      "requestHash": "70b04d0f017debcbde871d4def58a7b37f5ccc86e791377337c576c53d3036a7",
+      "signature": "R/1251",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:30:56.319Z"
+    },
+    "92": {
+      "requestHash": "d084118bcb920e74547f2aa6b3f8ed7a66ea493c762444160a4a0ea3e3d33142",
+      "signature": "R/1253",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:31:04.171Z"
+    },
+    "93": {
+      "requestHash": "326028d0d2a28e35aeb9b5e96dcbbe171f8cc4b48a0d600b412d5b7bc72237d9",
+      "signature": "R/1254",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:31:11.803Z"
+    },
+    "94": {
+      "requestHash": "402e9f0a10f1658790891c7292a567c2117511ee21fccad2c630c01bb6a679ce",
+      "signature": "R/1255",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:31:55.405Z"
+    },
+    "95": {
+      "requestHash": "b60ede3945411af042ec5f01428152e9a06c3dc66f480baba91dba45c7e42ef8",
+      "signature": "R/1266",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:32:03.006Z"
+    },
+    "96": {
+      "requestHash": "007543526d6153e12c4c0128997d501b1fec8837809f7dedafec741f19703a6c",
+      "signature": "R/1271",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:32:23.886Z"
+    },
+    "97": {
+      "requestHash": "8325b06ea9c683e65f910cae4090c1746eaac9064ff21ff57f94ffa462ad74f8",
+      "signature": "R/1274",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:32:47.463Z"
+    },
+    "98": {
+      "requestHash": "2506b4314d5473251c84843b903d40c8a42589a5db46095016d07c6e93ae79dc",
+      "signature": "R/1275",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:32:56.025Z"
+    },
+    "99": {
+      "requestHash": "2da5d67ffeadb2797e91cc96e641f66cff6b4849c71ddf565adb50977b4c2a6f",
+      "signature": "R/1276",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:33:03.598Z"
+    },
+    "100": {
+      "requestHash": "809258e379b9c1ec9a3fe11b4f43a3877f1ea07bd0cc56271d397aa7ec7d1d92",
+      "signature": "R/1279",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:33:48.942Z"
+    },
+    "101": {
+      "requestHash": "683474133cfa791690ce21b9bbba5a2e5ea66adfe20eabfd176736f6eeaddd39",
+      "signature": "R/1282",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:34:00.041Z"
+    },
+    "102": {
+      "requestHash": "9a5144861718b42520b70584aebe8155e340ed4267e1cefcbbfa6b2e0f698e85",
+      "signature": "R/1292",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:34:07.628Z"
+    },
+    "103": {
+      "requestHash": "f7c3f8ca003cee90757f136d132286894b12a9fbdf90acbc90760d0594a0798f",
+      "signature": "R/1294",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:34:21.358Z"
+    },
+    "104": {
+      "requestHash": "0d076a28406fb247a5ddfe658f5dc82bfb2fd769a2f2a7d69ae3fd263da21111",
+      "signature": "R/1296",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:34:35.271Z"
+    },
+    "105": {
+      "requestHash": "056f9e56a097813e260601c0c332eec02150224e533613efad52f15a2a36c0f5",
+      "signature": "R/1297",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:34:42.911Z"
+    },
+    "106": {
+      "requestHash": "400c4956a3c7124219e0f5ce21baaaa23614115b4584963ab58263a35aa99389",
+      "signature": "R/1299",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:35:23.022Z"
+    },
+    "107": {
+      "requestHash": "6521439ded9e935074a66e164ef36a592ff9f6409d3bbc97110bec5a0b3ee8ff",
+      "signature": "R/13",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:35:38.574Z"
+    },
+    "108": {
+      "requestHash": "255c514a8b3ebfa8c8d79fef3aefd35f07f72704a36cfe836854d33056f69f18",
+      "signature": "R/1302",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:36:03.430Z"
+    },
+    "109": {
+      "requestHash": "04c36cb2e760560d6d480fd646bf4bded601193ab96e5b89d7166754821a8c78",
+      "signature": "R/1313",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:36:18.986Z"
+    },
+    "110": {
+      "requestHash": "38a8a752f0535094f5d29aad425d1cb8094c64a04acb59864865a989d5098cd4",
+      "signature": "R/1319",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:36:26.686Z"
+    },
+    "111": {
+      "requestHash": "af39e111b4fdb721b18b260889a6f0ea8bad50ef844dea831c93a50757a9a7c5",
+      "signature": "R/132",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:36:34.436Z"
+    },
+    "112": {
+      "requestHash": "fdf700d368165321b547397a0cfd3dd9c275e6c1c908719a2967ff0090a65ac4",
+      "signature": "R/1320",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:36:57.914Z"
+    },
+    "113": {
+      "requestHash": "362983ed2351881b24c46caa8091e781600045d72f637e0cb024737a6eb51321",
+      "signature": "R/1322",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:37:05.475Z"
+    },
+    "114": {
+      "requestHash": "3f711c4dd9ab36af731da297313d502095e8d33e198ef26902747961a929c137",
+      "signature": "R/1323",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:37:49.060Z"
+    },
+    "115": {
+      "requestHash": "db4c3931cb970a3470e26491fb71a5ce1ae22bdb0b4ecbc8483f8b97970695d4",
+      "signature": "R/1325",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:38:04.655Z"
+    },
+    "116": {
+      "requestHash": "11bf3fef6f31b3ad982d4f1add55a6e7906d210ad5c62081232e7a058ca27d27",
+      "signature": "R/1329",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:38:12.637Z"
+    },
+    "117": {
+      "requestHash": "eaabd125fc653f36c18893ae15ee7bcee493d3343efe6777d0540e949378de8a",
+      "signature": "R/133",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:38:37.140Z"
+    },
+    "118": {
+      "requestHash": "16df2387a02992a67286771e3c48c0642216f2722b1e3eb5460c0daf45b66b21",
+      "signature": "R/1334",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:38:50.836Z"
+    },
+    "119": {
+      "requestHash": "6442c6873c9cad2917d877cd67bb28ac74ed8f31cc899abb71ed3e3bbda8beef",
+      "signature": "R/1335",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:39:04.764Z"
+    },
+    "120": {
+      "requestHash": "2250c03791e97501361981627bea13589ef9a402058aab34afc4c8e6e452d8d4",
+      "signature": "R/134",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:39:18.739Z"
+    },
+    "121": {
+      "requestHash": "df5e13e371f17c7ef743d2855b2d7e0ab68c9139114f1183dddff014736739e2",
+      "signature": "R/1340",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:39:26.472Z"
+    },
+    "122": {
+      "requestHash": "92425727f6d58343d41283670ade5cf25a98d3f9ff1d5310cdd766762a158e3e",
+      "signature": "R/1344",
+      "status": "error",
+      "updatedAt": "2026-11-11T12:39:51.956Z"
+    },
+    "123": {
+      "requestHash": "f14e3e33e184f2dd71fc2c16e77ee89c5a0446d08a4386689170911d54721342",
+      "signature": "R/1345",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:39:59.733Z"
+    },
+    "124": {
+      "requestHash": "60a9f22d44d6dd72c41e0985c670be9f63f1d045a3756c149684732c91341606",
+      "signature": "R/1347",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:40:20.539Z"
+    },
+    "125": {
+      "requestHash": "d9f156d20314465f6500aefc4c4a6e63eea8086d1a23582678f2769b33a97bed",
+      "signature": "R/1348",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:40:39.791Z"
+    },
+    "126": {
+      "requestHash": "9e636b2f879710954738e9f2c8d57ea04339866e80dce0e5931029d24a1bed50",
+      "signature": "R/1349",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:41:23.014Z"
+    },
+    "127": {
+      "requestHash": "b4444f2c6a0db0c722a68fb01feed479d3506ec0aaa68b0352a26220b4818e73",
+      "signature": "R/135",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:41:30.724Z"
+    },
+    "128": {
+      "requestHash": "c316fc53aaec1f8f1b8819ee577133230b366efcc6f6e61c25f76dc8a59c6ecd",
+      "signature": "R/1350",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:41:45.294Z"
+    },
+    "129": {
+      "requestHash": "3de4415347cd82afb3b3b0a8267c26072df6113dfd0ce538098028b4ff40bbb1",
+      "signature": "R/1356",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:41:52.790Z"
+    },
+    "130": {
+      "requestHash": "3382611160a8fce0427db45eac61aa8fe9f5373447e4f766228bb4b9c4fb0c2c",
+      "signature": "R/136",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:42:08.482Z"
+    },
+    "131": {
+      "requestHash": "af8d6365c420352a790197397834a41ce3b58daab9c229fd06f9c3169b18bb7b",
+      "signature": "R/1365",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:42:15.818Z"
+    },
+    "132": {
+      "requestHash": "78446d48edc9a37fe7ff29b297b2d8f725394049ba862c4a35ffe6aa765d569b",
+      "signature": "R/1366",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:42:23.369Z"
+    },
+    "133": {
+      "requestHash": "fc838ef16e60fa0d7226517ce04d6beca55bbd879ce1ef86fd39101ab1f1f6ba",
+      "signature": "R/1367",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:42:41.710Z"
+    },
+    "134": {
+      "requestHash": "51c398eef64a59a423071ef92033ce5306c8b78ffa671d035863fd8db4164957",
+      "signature": "R/1369",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:43:39.617Z"
+    },
+    "135": {
+      "requestHash": "09580865e540e0269828bd54a7b6b7cdf4ab759827cf3b871411f9d1498fe5ff",
+      "signature": "R/137",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:43:47.280Z"
+    },
+    "136": {
+      "requestHash": "b38b56a8d01048432b9577f966dbab3dfb2c3a8b78259d6a7070e33a2ce6da7e",
+      "signature": "R/1371",
+      "status": "error",
+      "updatedAt": "2026-11-11T12:44:08.951Z"
+    },
+    "137": {
+      "requestHash": "a72bf2f19405a7df1d5a5f529b3b6861f29c03f87c80b3c4457b3e3c2e1c97d0",
+      "signature": "R/1373",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:44:16.644Z"
+    },
+    "138": {
+      "requestHash": "6f8cac398e863f164a0a782a487af354b84fd97cd2c6167e1aa8aa144d900f9d",
+      "signature": "R/1384",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:44:51.623Z"
+    },
+    "139": {
+      "requestHash": "0bebd8c3964883a1697e9b8d6cd59a86dd849e59c1825a09f8e5b043b7b0a2b4",
+      "signature": "R/1389",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:45:25.436Z"
+    },
+    "140": {
+      "requestHash": "45e3b0d7518158a689145b8fe6f00ceafe2d16e4bfdeb8c7cb6b22bf7aa11b9f",
+      "signature": "R/1393",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:45:37.010Z"
+    },
+    "141": {
+      "requestHash": "c2eff78cb7299c9798f4f757395f2ba715afa76f5c6edc04ed343299ce27af92",
+      "signature": "R/1399",
+      "status": "sin_fotos_de_menu_en_esta_vista",
+      "updatedAt": "2026-11-11T12:45:47.568Z"
+    },
+    "142": {
+      "requestHash": "b9fdf2b2dce35b21d3894bd546fb64677283185a917395f6105e24b12fe83357",
+      "signature": "R/140",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:46:02.138Z"
+    },
+    "143": {
+      "requestHash": "f08ff502e46a6bc6a65e1a755aa5b982bc84a6af3625edcf373a991a9f6909c2",
+      "signature": "R/1403",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:46:10.346Z"
+    },
+    "144": {
+      "requestHash": "456a16c9f7bc3c0fb2df37db2cc800ccced69a9375a9e9735df030ea872d1029",
+      "signature": "R/1404",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:46:26.007Z"
+    },
+    "145": {
+      "requestHash": "eeddf7ab29c0b9b73008ae8f5bf8723ee0bc38d174d0a125c0b4ec0be70bdbb9",
+      "signature": "R/1415",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:46:40.045Z"
+    },
+    "146": {
+      "requestHash": "7392533759c6706760bb3c614f56d2d9734fefd48d6bdd4f9e38eacaa5ae3bdf",
+      "signature": "R/142",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:46:54.042Z"
+    },
+    "147": {
+      "requestHash": "c77073c8ea83cca3678971a5ab6ab0c761dfd22db95ecc3310aa34a0b7e9e8bd",
+      "signature": "R/1425",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:47:07.641Z"
+    },
+    "148": {
+      "requestHash": "4f94a9759cdcccc95e2b1f716bd0f9775c71f24434530354f6d597ed58d61bdb",
+      "signature": "R/1426",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:47:22.036Z"
+    },
+    "149": {
+      "requestHash": "c18b9f6de9880f084eaf5fde29d05394f5881d204bc27ec1a0bf0d11a41a92ae",
+      "signature": "R/143",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:47:29.816Z"
+    },
+    "150": {
+      "requestHash": "8a159020264e37c5cac1ed315fb7caa393098c281df8b3d55b28c77bc45d4e90",
+      "signature": "R/1430",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:47:37.445Z"
+    },
+    "151": {
+      "requestHash": "f36382d3efeeb191ce9648b6509e41cae2ff5a38b97f29a4bee00cf38f87d529",
+      "signature": "R/1434",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:47:45.073Z"
+    },
+    "152": {
+      "requestHash": "c4d90edeaf3b4b953ba99500327abe4b442a6ae7528b3ac0d3648e9babc1fd3d",
+      "signature": "R/1444",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:48:01.025Z"
+    },
+    "153": {
+      "requestHash": "c88ba47aac9b4c1f7b6a91688c9587f07818b9fc8711bf12758edc13ad6f2406",
+      "signature": "R/145",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:48:16.070Z"
+    },
+    "154": {
+      "requestHash": "8641b9b19442a7c7b9d8057554a48f1d996a3475cb07bcfe0629b22b6d64a3b9",
+      "signature": "R/1456",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:48:31.691Z"
+    },
+    "155": {
+      "requestHash": "5800b8dbcbdd2752d77fe27810f380ad11e4d2d8a1baa3693dc6149b85fc0d6e",
+      "signature": "R/1461",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:48:45.565Z"
+    },
+    "156": {
+      "requestHash": "723fb840dd049b448b6cefee696a26fd2e7a38cc43649e8b2ab0abf79be87464",
+      "signature": "R/1463",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:48:53.192Z"
+    },
+    "157": {
+      "requestHash": "9938a5f14ddd468ba04c8e04f1baa7f632d556baf62018384d1a572019681200",
+      "signature": "R/1464",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T12:48:59.122Z"
+    },
+    "158": {
+      "requestHash": "e907d2e49186bf8eb0b71e6f389af22651c6bab1a48dd071496e17e7d92cc6b3",
+      "signature": "R/1466",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:49:06.819Z"
+    },
+    "159": {
+      "requestHash": "49781ff9ba116df849fd801bb702d5e70e7e24c2c403e4d398a3735d972c3543",
+      "signature": "R/1472",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:49:22.850Z"
+    },
+    "160": {
+      "requestHash": "61e417bad9782f7c5a050fd4beba2e27e3c67609a48391380bc3b89ef5fae455",
+      "signature": "R/1474",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:49:37.077Z"
+    },
+    "161": {
+      "requestHash": "1ec323a01899313a820e2b3046194f524f5794046718bd1f1fbee7c479f5d9b5",
+      "signature": "R/1479",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:49:44.672Z"
+    },
+    "162": {
+      "requestHash": "852c2eb613175bbba145212c6392a57690a6654f02475f4132d7e107e6757640",
+      "signature": "R/148",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:49:52.230Z"
+    },
+    "163": {
+      "requestHash": "1b5115a3d0a91c47d5f01aa6273d8d8c017cd5ed0b23844a3d9efce693febacb",
+      "signature": "R/1480",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:50:00.170Z"
+    },
+    "164": {
+      "requestHash": "8e198e8ac97ddc4fb6b74ab4f96e8851cd94c36dc6f8ce118060dae5d73ee859",
+      "signature": "R/1483",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:50:07.896Z"
+    },
+    "165": {
+      "requestHash": "4b7d2d26bffc3e0e07c45fbbfcf22817b2c41da58822f57ef28e0589901e26ae",
+      "signature": "R/1486",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:50:41.258Z"
+    },
+    "166": {
+      "requestHash": "436a1c6a94893947c71951b7f1eb64ae47813d8eb1f5edc550fb7e55a0cacb80",
+      "signature": "R/1488",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:50:49.277Z"
+    },
+    "167": {
+      "requestHash": "c6e12f3cbd9943f72a91f2179a9d1a4ad2da6b2f23df4f22c4a136a4eb11027e",
+      "signature": "R/1489",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:51:10.300Z"
+    },
+    "168": {
+      "requestHash": "e2cb0630fc41ecfedb179841701e4702bb552cf2c4d8ccecf1afe1aed21611a0",
+      "signature": "R/1491",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:51:18.010Z"
+    },
+    "169": {
+      "requestHash": "5f0512a77176b31f0bd56b4ed4820e4cc88509aeee52fac78047ef6243911a61",
+      "signature": "R/1492",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:51:25.689Z"
+    },
+    "170": {
+      "requestHash": "0f6caa15dcc81e31634e74c84e5a9b22f1aa4aca0b19ce581bdbdc0720015059",
+      "signature": "R/1493",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:52:10.022Z"
+    },
+    "171": {
+      "requestHash": "f8b173bc32c5431a0a4918fb6b614b1b79b6d504fad454b8191ddf4074bb2bab",
+      "signature": "R/15",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:52:31.543Z"
+    },
+    "172": {
+      "requestHash": "9a4a772e1e6fda9dba9f33f771ab89d4311690eb25857f4eb5931f110b327284",
+      "signature": "R/150",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:52:39.410Z"
+    },
+    "173": {
+      "requestHash": "4b1c083cc8b55e4da22573eb45ba28c6a5a834a30f5fa614326ed788282d704c",
+      "signature": "R/1502",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:52:53.050Z"
+    },
+    "174": {
+      "requestHash": "550dbd89098fdd15e05e5835d99ae681313ea9746c937e9cab1a9f12cd6a41f8",
+      "signature": "R/1503",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:53:00.792Z"
+    },
+    "175": {
+      "requestHash": "ceb29bed28f16d066af1cdd904f51d92f19f737b7a78cf3dbaea5079cdb22b77",
+      "signature": "R/1505",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:53:16.366Z"
+    },
+    "176": {
+      "requestHash": "935bb5f8efb244830e8245d53fccf0c0869e48491d29f3f57a10ca157a5888cc",
+      "signature": "R/1506",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:53:40.567Z"
+    },
+    "177": {
+      "requestHash": "bddfc19687c40b5670df7177ac8e98b62bbc2d863a294e6c0249435b9e7551f3",
+      "signature": "R/1509",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T12:54:08.215Z"
+    },
+    "178": {
+      "requestHash": "2d01d26909049b34670c4dd3cd0eaf698665b4c4c4e770c0c36edca79c530b9a",
+      "signature": "R/151",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:54:17.854Z"
+    },
+    "179": {
+      "requestHash": "6c54d42caa5fdeb3e19973c936504fd103f3542569a78ae3d828f04f7128fa0c",
+      "signature": "R/1515",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:54:35.194Z"
+    },
+    "180": {
+      "requestHash": "f8ac276456c0538ea6dcc9517a51be7556ddd6819da9fce7cf2f0102fae1f07b",
+      "signature": "R/1522",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:54:57.401Z"
+    },
+    "181": {
+      "requestHash": "8214a708f950a2625d1f753a23873a03b197b25688b70db2185f0ad28ef98379",
+      "signature": "R/1523",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:55:05.970Z"
+    },
+    "182": {
+      "requestHash": "bd2e981400d520f7ba2eca132de6285a5511f59f6f16bca1cb8ff13e20bea27d",
+      "signature": "R/1527",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:55:19.868Z"
+    },
+    "183": {
+      "requestHash": "a48288e1850b74dd9eae6a0e73f70c5e8e803d42272af764b732832fc3ed1c31",
+      "signature": "R/1529",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:55:36.837Z"
+    },
+    "184": {
+      "requestHash": "b21a0757c527b5ec05e6bd560986fda9a6689f3c08108498c532939c3dee5b2d",
+      "signature": "R/1532",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:55:54.731Z"
+    },
+    "185": {
+      "requestHash": "12a73046584e3e9dd4d0c351dad3902fa9336f7c60a44a129745e2d2911b81e6",
+      "signature": "R/1533",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:03.719Z"
+    },
+    "186": {
+      "requestHash": "95195ead3aea32fba14a6ff624380d64a2b1c4ac0f371db269a3356fe4fb314a",
+      "signature": "R/1540",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:13.130Z"
+    },
+    "187": {
+      "requestHash": "133f50f1d8901b8ecbe4cfad5c28c5ad03760accb978bbd297f647d63d6ba32c",
+      "signature": "R/1541",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:21.492Z"
+    },
+    "188": {
+      "requestHash": "0380c58b8f0cadc508a2bccec4cb2eb34d21604c8fc99cd1706226c4f57eb0a6",
+      "signature": "R/1542",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:30.609Z"
+    },
+    "189": {
+      "requestHash": "f1a61fc1f3f16a1fb0082a4aade958f552b0b003f178ce5fa43783b0fc9f9b6c",
+      "signature": "R/1544",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:39.353Z"
+    },
+    "190": {
+      "requestHash": "f3b1f3b83d6715f592d8679b191d1eca5c6bf408b1f0fb6ede9b2de08200a2f9",
+      "signature": "R/155",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:56:48.503Z"
+    },
+    "191": {
+      "requestHash": "acad453a0ccfd13a769bc50aa9089d8a843ec44be253cf9f95a5369dd53023e3",
+      "signature": "R/1550",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:57:15.301Z"
+    },
+    "192": {
+      "requestHash": "e9f1caf8fa5eae46dc6fc43d4b36e7714bb01ca187802c172f7b2be4b53cddaf",
+      "signature": "R/1551",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:57:23.777Z"
+    },
+    "193": {
+      "requestHash": "e7a49825706a9c7272c52f7b50c0bc1e142439edcd13fd8e375da52ba93efe51",
+      "signature": "R/1553",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:57:31.754Z"
+    },
+    "194": {
+      "requestHash": "767e6bd119dc7c49e87b01a92131e4f46c939978d5010379eba4e58a7febf1f6",
+      "signature": "R/156",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:57:39.891Z"
+    },
+    "195": {
+      "requestHash": "8e0172bbc3fb45373b55261fccc92aa9045ee4048e20d877e56c1344ed63cb95",
+      "signature": "R/1566",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:57:48.023Z"
+    },
+    "196": {
+      "requestHash": "5935e64f8cfc3f42daf9495e96cf361070237ddd87f4ef5b620e4269d8799ba5",
+      "signature": "R/1568",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:58:02.970Z"
+    },
+    "197": {
+      "requestHash": "7f0f7ab26b2510b2d9da0779ff35b5f2e07af45e868bf418de6a224cfc40c218",
+      "signature": "R/1571",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:58:18.334Z"
+    },
+    "198": {
+      "requestHash": "e800df4ea04c4408ec980749c18ae7c732f750afddc2a4af2f15101511328901",
+      "signature": "R/1579",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:58:34.178Z"
+    },
+    "199": {
+      "requestHash": "91394dada88e23d06ce10a196af78f09be12f18ca97bcb794e47236a9af740f9",
+      "signature": "R/1580",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:58:51.662Z"
+    },
+    "200": {
+      "requestHash": "1e8c3736a1bb5d6bf136842f0900a22e7e63cb11a69430f2d7b0a4554dfd84d5",
+      "signature": "R/1584",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:59:17.426Z"
+    },
+    "201": {
+      "requestHash": "1649a22fbe21834ab09cb455ee1ac42494953b095fde005779645db38deabe66",
+      "signature": "R/1595",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:59:25.964Z"
+    },
+    "202": {
+      "requestHash": "619dc97ad7ec3cb4a6d3df36189f212744c73bc4944cfe6ef4ae20a7b11ecf00",
+      "signature": "R/1603",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:59:34.309Z"
+    },
+    "203": {
+      "requestHash": "2a160edec74a9cdcf6edc1345ef1b0499b936f5ce403ffdeeacf8ed3117edc11",
+      "signature": "R/1604",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T12:59:42.530Z"
+    },
+    "204": {
+      "requestHash": "eb9977104c6d935a8bfaaaaa5cedf5e164f1556848a83f7305c27637c4ec9e76",
+      "signature": "R/1606",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:00:07.951Z"
+    },
+    "205": {
+      "requestHash": "7c319ed637f41662c62c3baca183b198ed36e6785cc608abb294745cfcb732cd",
+      "signature": "R/161",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:00:16.444Z"
+    },
+    "206": {
+      "requestHash": "41401fdb6240c3ba7f09fb1efd545f2a3ebfb4888eaf14ae87a2df744d2cb316",
+      "signature": "R/162",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:00:32.170Z"
+    },
+    "207": {
+      "requestHash": "56e039721971d5ad265d8a9d5f82182d42e7f7b28af3bbdc156b986dfd89239c",
+      "signature": "R/1628",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:00:46.114Z"
+    },
+    "208": {
+      "requestHash": "0bdf89c2f17d8ea1f4ff2bab8e94ce1f47090b7c1352775ff0c594f8bd159f7a",
+      "signature": "R/163",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:01:08.379Z"
+    },
+    "209": {
+      "requestHash": "6708318773d7f1b2bdc9556900f7cafff78b1d27d5e178fa32674b51d2c80321",
+      "signature": "R/1630",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:01:24.371Z"
+    },
+    "210": {
+      "requestHash": "c58683389f8ac6204e3e9c6b8714d95ec173ad9e996a37a72b1442d9f8adb6e1",
+      "signature": "R/1632",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:01:32.640Z"
+    },
+    "211": {
+      "requestHash": "fda48a9cd1e0d0efa7151cdbc66026a6fa49e461c7ea1ecac8030fd538692df6",
+      "signature": "R/1633",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:01:40.289Z"
+    },
+    "212": {
+      "requestHash": "f173481f9ad9b62ec0e7a57fb4a38b2ae2d64f47fc56b29bd397c402d2f08043",
+      "signature": "R/165",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:02:11.486Z"
+    },
+    "213": {
+      "requestHash": "4ca72481b85a039439efb6ae6d128b1ce71d3185b53bb066784eddf222a3e5c9",
+      "signature": "R/1651",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:02:25.639Z"
+    },
+    "214": {
+      "requestHash": "770b8d396e55b52ea6b510f8e19351b2f233f6f8a4602f7f79756d65922668c1",
+      "signature": "R/1653",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:02:51.726Z"
+    },
+    "215": {
+      "requestHash": "57828bcea3fe3d785895407150a222d9f832d89f6830292e0ebfaf99e49c304c",
+      "signature": "R/1654",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:03:02.593Z"
+    },
+    "216": {
+      "requestHash": "5b255aebeb53887ca4e389f5cf913d4f9b7cbeaf2ef6a7e8633df0f27d38701f",
+      "signature": "R/1659",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:03:37.930Z"
+    },
+    "217": {
+      "requestHash": "37d6b7d0c52f08554875d0f71680c1bfe14f153222ae1f6897c90670467eaf64",
+      "signature": "R/1660",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:03:48.968Z"
+    },
+    "218": {
+      "requestHash": "cf58b1eee05fdeb865d595c473e69971bb8d010892ea63aaa949e23bf8e655e7",
+      "signature": "R/1662",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:03:58.106Z"
+    },
+    "219": {
+      "requestHash": "717465c6a304e2387ef2b25d37d75f1e2d0dc11ed36feb3fdf98379917c754e9",
+      "signature": "R/1663",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:04:12.672Z"
+    },
+    "220": {
+      "requestHash": "10ee1085a2cb714e497831286ae4aa7c87043606753c3edc207070c71a577b4a",
+      "signature": "R/1665",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:04:48.062Z"
+    },
+    "221": {
+      "requestHash": "acac1d903ce94bfa53efcc10630752db6f5107586d641eb3d121f99b0ea448e7",
+      "signature": "R/1667",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:05:01.637Z"
+    },
+    "222": {
+      "requestHash": "641506a09a5a2b1eddc0951e45489454fbacab0a8ac8210a8088057dfa44bbd8",
+      "signature": "R/1670",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:05:15.163Z"
+    },
+    "223": {
+      "requestHash": "31740684b58725218ba5427ebc865991b3b3238ea6319a13432ce104b8e837d4",
+      "signature": "R/1671",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:05:23.048Z"
+    },
+    "224": {
+      "requestHash": "1a735e155b85b4c2db1eb64bb0a33ccc1d11704a48599dbe2595209ad44d5639",
+      "signature": "R/1674",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:05:35.976Z"
+    },
+    "225": {
+      "requestHash": "4dbd2216f4a2e9ae01fb7c1651bb664bf87d26241df4cd34b010907358b872a1",
+      "signature": "R/1676",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:06:10.247Z"
+    },
+    "226": {
+      "requestHash": "f23283acfa583013971c55889ccadcdf9f1cc7bbb43788c5832405efadf13a3e",
+      "signature": "R/1677",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:06:18.206Z"
+    },
+    "227": {
+      "requestHash": "ae472d7991582f27d5fd54059cdf362642a85e5c951196bb8a7282e6c5db93c4",
+      "signature": "R/1683",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:06:32.327Z"
+    },
+    "228": {
+      "requestHash": "60cb4418297be29f9b1783c1311914d6a0c4d64d622364baa48f49c66651e172",
+      "signature": "R/1684",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:06:55.482Z"
+    },
+    "229": {
+      "requestHash": "0c43d44c5c4e78b0a5c2c0b4ae38aa02327cb6a66238ce89fb728a89e1a6f76e",
+      "signature": "R/1685",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:07:39.941Z"
+    },
+    "230": {
+      "requestHash": "ce32ca66c84813020ae62be7b5cb00a0ea30df21e255fea3cc33dcdd249dab41",
+      "signature": "R/1697",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:07:51.366Z"
+    },
+    "231": {
+      "requestHash": "1727e53cf694e8dea1eb126410fe234bbb97fb04c389bb1e33478ce89f9bfae0",
+      "signature": "R/17",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:07:59.414Z"
+    },
+    "232": {
+      "requestHash": "22e73082bb96cb11e7424b04e2fafcc8bcc14fffac5ceb8b6ce1be6ae240a76a",
+      "signature": "R/1700",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:08:06.848Z"
+    },
+    "233": {
+      "requestHash": "9e445e3481d8310786235d2426320c865f30d9d02b002a1d26259ab4fb8ef5d8",
+      "signature": "R/1704",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:08:22.382Z"
+    },
+    "234": {
+      "requestHash": "374e49981e7b9bc1fd0bf0b93d055d402c15b837fee5c8e98379bfd1048531a4",
+      "signature": "R/171",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:08:44.263Z"
+    },
+    "235": {
+      "requestHash": "a91e2ed996ab74b757ae2b51d9c3fbddcf9dc86378c2ec77c0c79bbfc56826d1",
+      "signature": "R/1712",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:08:51.919Z"
+    },
+    "236": {
+      "requestHash": "3bf2e211d6fe7311b4afe02659708df7dde39ba8742ff4617395cd36e35063e7",
+      "signature": "R/1714",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:09:12.060Z"
+    },
+    "237": {
+      "requestHash": "d042237d2b2bb5410da08b81b4b103a8414bcd8edd63a9e84292dab97d86be3a",
+      "signature": "R/1716",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:09:25.148Z"
+    },
+    "238": {
+      "requestHash": "2937ff18b1b291d1814efa03d62fd4c431d24b49d984e1f0902ba0de829d1c3c",
+      "signature": "R/1718",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:09:32.707Z"
+    },
+    "239": {
+      "requestHash": "7bba0aa678b807f5a3c461475a2a43dbc43eeaf50d2e258420b70d219afa3d8d",
+      "signature": "R/172",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:09:40.421Z"
+    },
+    "240": {
+      "requestHash": "7059dc592b436cfe518725ad2d2cb9bf5bf22b7e1e5695fbb36505fa8445603a",
+      "signature": "R/1720",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:09:54.517Z"
+    },
+    "241": {
+      "requestHash": "0a39a1709b34b867e4d19f0914a1529782227d3366b1338e018b3fe5001744dc",
+      "signature": "R/1722",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:10:07.675Z"
+    },
+    "242": {
+      "requestHash": "bd0c1d79b9c30d053c355551f26393d0630c464a250bead0dbe51470198f6119",
+      "signature": "R/1723",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:10:31.385Z"
+    },
+    "243": {
+      "requestHash": "d890ea5d98fe1ea195d774995aec7eece0f11eb97689edd8660b8e08a4d91fc5",
+      "signature": "R/1725",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:10:45.421Z"
+    },
+    "244": {
+      "requestHash": "c2555149adf3d243a9fe7e28f4213a80f4b378194b34ab95048149ab5d320903",
+      "signature": "R/1726",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:11:01.280Z"
+    },
+    "245": {
+      "requestHash": "5bf974acb45bd9fc45d008b25a7918bcc9d4a4dd454d705613c7f7ad2a16c6d1",
+      "signature": "R/1730",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:12:26.427Z"
+    },
+    "246": {
+      "requestHash": "f8947853b21a93cbadee98e39a795e7393e19144be5e570350e9cdc318697b74",
+      "signature": "R/1731",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:12:34.388Z"
+    },
+    "247": {
+      "requestHash": "47f01e335eb10b231ebfb5b26b67cda85f3241322639b72579fea964ff7a31ba",
+      "signature": "R/1732",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:12:49.832Z"
+    },
+    "248": {
+      "requestHash": "05d88008fea0f5da65358402ede756ea9e4b4aad35aeab8cfffec1a9093e4651",
+      "signature": "R/1742",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:13:12.934Z"
+    },
+    "249": {
+      "requestHash": "4742bf870200a079873795132b710acccc7acf235225daf3edf526f27cc65d23",
+      "signature": "R/175",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:13:20.812Z"
+    },
+    "250": {
+      "requestHash": "69e0be48adeade8033c97f260d59348aff058c074b30ebfd9b8b21215eaec8c8",
+      "signature": "R/1751",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:14:04.268Z"
+    },
+    "251": {
+      "requestHash": "e186c21981519e27da71c8c7fc0d062b66c02449762db78939f1ad778bd37958",
+      "signature": "R/1765",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:14:18.471Z"
+    },
+    "252": {
+      "requestHash": "d6e0331c466fe43cb007d34367fb5005c8cb4ddbbd2cfd7d3023814cd14e4be4",
+      "signature": "R/1766",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:15:03.949Z"
+    },
+    "253": {
+      "requestHash": "9db78d53c94bdd47c99aacfc128a995342eeabe04abd354210f61428f82944ec",
+      "signature": "R/1770",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:16:29.605Z"
+    },
+    "254": {
+      "requestHash": "00ca6f0326d0534629bbc537851d22cde2a55467128b955393eb5e930097d418",
+      "signature": "R/1774",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:16:47.728Z"
+    },
+    "255": {
+      "requestHash": "8c87347e6994d18b58836a385925ff3d02c2d8aefd5bdd5d30823516f37b8d96",
+      "signature": "R/1777",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:17:08.212Z"
+    },
+    "256": {
+      "requestHash": "fe4bfd9099b7eb616606cf42df035974222c0a072dabea57301d651075f89d84",
+      "signature": "R/1778",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:17:22.273Z"
+    },
+    "257": {
+      "requestHash": "1c01385eb5a12e416c24334a0d07f0034d3c6435502710b1de3b4643d2c87aac",
+      "signature": "R/1779",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:17:37.800Z"
+    },
+    "258": {
+      "requestHash": "62ddb5fa352e9b254800a4bd61aeee08c13ed6ce172c26ad6ec0b48ca0a09fab",
+      "signature": "R/1784",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:17:48.814Z"
+    },
+    "259": {
+      "requestHash": "8795b645f7d625b3329a9ed7bfd316fcbdfe0bc453096369ffdf6b2b1799d0ce",
+      "signature": "R/1786",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:18:04.356Z"
+    },
+    "260": {
+      "requestHash": "81ced10bd9ef07000b41761d6f473738a0a393736c9de0e2a91689b67fb8e469",
+      "signature": "R/1787",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:18:28.274Z"
+    },
+    "261": {
+      "requestHash": "e1a7001910d6b955cfd5289175a970c5bdc2301bcc635f94aa3072aed64697db",
+      "signature": "R/1792",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:18:43.861Z"
+    },
+    "262": {
+      "requestHash": "624b6f98564d0fba3d9b554e63bc524d6b39f78b175f8303c8bf3dc8125ab1ef",
+      "signature": "R/1797",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:18:51.440Z"
+    },
+    "263": {
+      "requestHash": "95219ab9b1d9718af5a0802a7c8c4b14994ce25fdf0bab1f0f08a6a27f5cae1e",
+      "signature": "R/1800",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:19:52.001Z"
+    },
+    "264": {
+      "requestHash": "e701088a3800376d2f9cc8aeab7d823fd6775653f6aad12f8a088120434f8f7f",
+      "signature": "R/1801",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:19:59.529Z"
+    },
+    "265": {
+      "requestHash": "448cfc484c38205d77fc0d64e247fa15569c87d60ec79331731b6baf797d81db",
+      "signature": "R/1802",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T13:20:05.099Z"
+    },
+    "266": {
+      "requestHash": "00c5c1ef27f4195d2d4107142ab92ae4e5d8ae79b9c19c340c66975591bd2343",
+      "signature": "R/1803",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:20:12.438Z"
+    },
+    "267": {
+      "requestHash": "b47adc426835e13829afbafc076542d304c51db1e700ccd741d0b5ca8edb3db3",
+      "signature": "R/1804",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:20:19.997Z"
+    },
+    "268": {
+      "requestHash": "fc5fb4f0999b659607c5f053e75db42940ef099eb7e4106bc01497129d691631",
+      "signature": "R/1805",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:20:27.609Z"
+    },
+    "269": {
+      "requestHash": "b2bd4e937fa00df049a9f77e786a35f16d3b0241bb275b7bd3e0f565a17fbee1",
+      "signature": "R/1806",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:20:48.073Z"
+    },
+    "270": {
+      "requestHash": "80a6387b83cff639a980d7fc189879ce0f378b0b30611ebaebd70910528478a8",
+      "signature": "R/1808",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:21:01.940Z"
+    },
+    "271": {
+      "requestHash": "b1578e0f08fb3438e6ba7645910ec9ba44ca5d47ab61d98221982d4264cdd258",
+      "signature": "R/181",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:21:13.710Z"
+    },
+    "272": {
+      "requestHash": "d5fe081293f0f2f9f4a9511aeda4acfa3eebad4b7339a9fe17267201cf25a50f",
+      "signature": "R/1811",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:21:41.454Z"
+    },
+    "273": {
+      "requestHash": "b580c3001933bf80cb8506208f8d2ba30ce55b3420616cd3145021a47e016d52",
+      "signature": "R/1813",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:22:14.129Z"
+    },
+    "274": {
+      "requestHash": "577bdc0fcc2c055e62109deb393ec0bb9965bfaa847c554e3534c176a3a41fe5",
+      "signature": "R/1814",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:22:28.709Z"
+    },
+    "275": {
+      "requestHash": "f3479cce95143e282b3beb40ba052b3764ba2757590ecd771ca628120f9b6ab8",
+      "signature": "R/1817",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:22:44.333Z"
+    },
+    "276": {
+      "requestHash": "e2920205200103b0c79f5d0a3b57c37f58cb53918555241d49bfd88d31e68c62",
+      "signature": "R/1819",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:23:16.145Z"
+    },
+    "277": {
+      "requestHash": "c340d5880e02e6cbcd21e72cfad0d7151c95992985e8b9b039d6da4727684707",
+      "signature": "R/182",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:23:24.840Z"
+    },
+    "278": {
+      "requestHash": "c5739ea6c1cad062fa29ef308c50874cb0348d4705dff3e12874b759de163a12",
+      "signature": "R/1820",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:23:32.953Z"
+    },
+    "279": {
+      "requestHash": "afd2062ec4b7feac4431fcbe21b7c98550a1e183daac16be77736f3db8cf1a96",
+      "signature": "R/1821",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:23:56.776Z"
+    },
+    "280": {
+      "requestHash": "e86cb6d260d3e19573ba78114f136ad7570bd72431437946ecd2ecb390c2e1ae",
+      "signature": "R/1822",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:24:12.728Z"
+    },
+    "281": {
+      "requestHash": "c4def3a6bf24748563707b3d84537d0b8c468f69a8daa4edcd862f8cd44704bb",
+      "signature": "R/1823",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:24:56.084Z"
+    },
+    "282": {
+      "requestHash": "063cab66512ebf5632278c6fa4a58421bd13ad88ac5e67aa056ded96910aac9e",
+      "signature": "R/183",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:25:10.131Z"
+    },
+    "283": {
+      "requestHash": "e2008a5623c8a1c8940d076b8780dc0803c42845521d85d88135c9896f8eec92",
+      "signature": "R/1835",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:25:25.682Z"
+    },
+    "284": {
+      "requestHash": "f12c3f791eea720da2e8cf0af3d41234ed02931445d662d448d41b6cd8af2444",
+      "signature": "R/1842",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:25:59.794Z"
+    },
+    "285": {
+      "requestHash": "e2d291cb8363ff502ba1da5f4e02e6c0b012a9831cccfc2b032baae20240a723",
+      "signature": "R/1843",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:26:08.173Z"
+    },
+    "286": {
+      "requestHash": "be661dadf56dea27e3c48f7277606568be4de9eb5c4528c45297f0374cb36797",
+      "signature": "R/1847",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:26:53.288Z"
+    },
+    "287": {
+      "requestHash": "c8c99584dfc2ff89c1baab84bff102be44850d0e39ac06f5699c4037392fd6c0",
+      "signature": "R/185",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:27:39.187Z"
+    },
+    "288": {
+      "requestHash": "03f0f41bb832f2882399202e04ca7475e77cb7992895a7f23512f72ae1574c11",
+      "signature": "R/1851",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:27:54.813Z"
+    },
+    "289": {
+      "requestHash": "695dccc16a9c712a5433fe453d46c090b1d216b7a50504f63768787c867047d1",
+      "signature": "R/1852",
+      "status": "sin_fotos_de_menu_en_esta_vista",
+      "updatedAt": "2026-11-11T13:28:06.785Z"
+    },
+    "290": {
+      "requestHash": "15928df27a1762c2bb4eee21f1522661824f01d8c9d87c0275d7dc94631655ef",
+      "signature": "R/1853",
+      "status": "error",
+      "updatedAt": "2026-11-11T13:28:34.510Z"
+    },
+    "291": {
+      "requestHash": "5e6aaaed3fe74457fdb302f9ba6fc2127d6b8875bd0d7c664b3a91bbe3fd72ee",
+      "signature": "R/1856",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:28:49.296Z"
+    },
+    "292": {
+      "requestHash": "a248e74856c3dec05f49988f78b97de9bf707e82e1aa1d1a4b42ebd4b0451329",
+      "signature": "R/1859",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:29:01.594Z"
+    },
+    "293": {
+      "requestHash": "f11c290168f7c9bd69f7eb503f92112085aeebdfe3b4ba032717e0613996ae49",
+      "signature": "R/1861",
+      "status": "error",
+      "updatedAt": "2026-11-11T13:29:14.222Z"
+    },
+    "294": {
+      "requestHash": "0f46660fbf09af8be9817afb4470159621080dcb790d6a957ceffef1c1f78c53",
+      "signature": "R/1862",
+      "status": "error",
+      "updatedAt": "2026-11-11T13:29:40.213Z"
+    },
+    "295": {
+      "requestHash": "c9f5d7f515ff603bf602ed12cacf3b2296620aaadb4bdc8630d08cec7d2d7ea4",
+      "signature": "R/1863",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:29:54.656Z"
+    },
+    "296": {
+      "requestHash": "e58f2f8ba9d7eb5fc776c33c28548c1e9205f228b7bfa579939e77b85a3d83d2",
+      "signature": "R/1864",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:30:19.726Z"
+    },
+    "297": {
+      "requestHash": "77933348303a08218a58fb30b8a56033638d457bf910d101d89730680c502aec",
+      "signature": "R/1868",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:30:34.742Z"
+    },
+    "298": {
+      "requestHash": "29752842ac48dbcf0f6b8a223175cd69a6ff1b4b73224049b532d1e2e1d5c423",
+      "signature": "R/1870",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:30:42.745Z"
+    },
+    "299": {
+      "requestHash": "0ed7475a0d19ca811c8f9c28b9ba3ec7275f425410dc6e5d1e1105b3adfee166",
+      "signature": "R/188",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:30:51.053Z"
+    },
+    "300": {
+      "requestHash": "d099011fa7e8cb798b69542224114349e1283ef917250a5839dc070541cbab22",
+      "signature": "R/1885",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:31:19.843Z"
+    },
+    "301": {
+      "requestHash": "9f40db4e77c5470caed78930aac7569885ca0ca978960d18b93411134b73e256",
+      "signature": "R/1886",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T13:31:26.061Z"
+    },
+    "302": {
+      "requestHash": "e73af6e580bd9f2ed2b0ffa3bc5c7761f8663c1ac211b9355ab9caa94a4a23ab",
+      "signature": "R/1887",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:31:34.238Z"
+    },
+    "303": {
+      "requestHash": "bbd94d0022dd50060779176ed0595e209792538a8bde1390f0b0a0448eef04db",
+      "signature": "R/1888",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:31:49.043Z"
+    },
+    "304": {
+      "requestHash": "a84fc6e6e7e03b262ecee8256e324912a08bb5b8b733e4a1b3ab91c8a01fc6cb",
+      "signature": "R/1890",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:31:57.080Z"
+    },
+    "305": {
+      "requestHash": "00b9fb13a80f1d8c4403348f5192506d070c18556e0dff6bd6287d8552da4db0",
+      "signature": "R/1891",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:32:43.289Z"
+    },
+    "306": {
+      "requestHash": "6e362fe191fe0a42b14949614d45d5513b0fba4c0ae67a9f1833eac27ca51b7b",
+      "signature": "R/1898",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:33:09.351Z"
+    },
+    "307": {
+      "requestHash": "9e9c4d755c7312967daa6933ccb336058b2c64ba72c89085db23bd7276124dee",
+      "signature": "R/19",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:33:17.715Z"
+    },
+    "308": {
+      "requestHash": "12b8686d5d59409f4449967aa70b19e86856e1714d837ce8239e57f421b95307",
+      "signature": "R/1908",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:33:26.018Z"
+    },
+    "309": {
+      "requestHash": "5ff0fdbfb39a09f68d53be1131ff84d079a17622398ea6054f5062623eab61da",
+      "signature": "R/1912",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:33:41.987Z"
+    },
+    "310": {
+      "requestHash": "6983cbd81329d4682ef07163302a04cf3ff8d31c6c38e945276408f1656acca7",
+      "signature": "R/1913",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:33:55.949Z"
+    },
+    "311": {
+      "requestHash": "2ccc29b8c2f29284df7bb815a95707821b4207e9df55f7b232b5ed6bdeeb0f68",
+      "signature": "R/1914",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:34:07.318Z"
+    },
+    "312": {
+      "requestHash": "07e79ca9aadf4477b0075782c595402750397081f29688b1773b6b20e35c527f",
+      "signature": "R/1915",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:34:15.485Z"
+    },
+    "313": {
+      "requestHash": "9abb6fa81762611242fd0026e978a8e49b032415e4e58ddc767a262ed7d09d55",
+      "signature": "R/1922",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:34:23.324Z"
+    },
+    "314": {
+      "requestHash": "c49db2bf69d07ade1828747cf2c1c8dc7591f36b79d9a10a8ad2103c4900bda6",
+      "signature": "R/1925",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:34:37.087Z"
+    },
+    "315": {
+      "requestHash": "f39139d9914f382a80c6cee895cce8c9e851bf82b8e5bda9f08f738c22dc2dc6",
+      "signature": "R/1926",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:35:11.461Z"
+    },
+    "316": {
+      "requestHash": "0b792e3f6881048510ee2df7ac451d28c0c62ce000524ac5bdb16b146918af78",
+      "signature": "R/1929",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:35:25.777Z"
+    },
+    "317": {
+      "requestHash": "24c9b458262ecc0f2cbece0b5c32dbe512e4a0d9332621b886e9bfc46afc7ef3",
+      "signature": "R/1931",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:35:40.794Z"
+    },
+    "318": {
+      "requestHash": "9b86399f2920ef93a2b355782c08c447f6cb7bb198dcd22c7879a79274997cf4",
+      "signature": "R/1932",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:36:05.739Z"
+    },
+    "319": {
+      "requestHash": "f4eb027353c658b830c4f022d8fa70184db951196366f45b7414c832ce20db09",
+      "signature": "R/1933",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:36:21.824Z"
+    },
+    "320": {
+      "requestHash": "25fed9f771f24d5055801d289a02d632237239109a02a064314ac996a9ed82c6",
+      "signature": "R/1934",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:36:55.250Z"
+    },
+    "321": {
+      "requestHash": "9f66e4f4b2930d90bd83b56ad72a0595302acc0f43a6ea44c448b1e31453b2d8",
+      "signature": "R/1935",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:37:03.532Z"
+    },
+    "322": {
+      "requestHash": "e8c1b04dd8cdc195bef097bd21f2da81a2e5d55ae92b7e216f71a805dd50c8d0",
+      "signature": "R/1936",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:37:31.944Z"
+    },
+    "323": {
+      "requestHash": "965ea6c7ec88d3f6c737354f7dedfa0f35543b081c090df21fcd907e5d8c6305",
+      "signature": "R/1937",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:38:06.807Z"
+    },
+    "324": {
+      "requestHash": "241d1ea8034d082d8e9cb5f4898610353dbcc0b5aca5d39513dc7b3ec814b6d7",
+      "signature": "R/1938",
+      "status": "sin_seccion_menu_en_esta_vista",
+      "updatedAt": "2026-11-11T13:38:24.166Z"
+    },
+    "325": {
+      "requestHash": "59ab9acbfdb3986f3ecc0a2181bcd6abb7df49b47bb4c267d2510a9272a2d7a3",
+      "signature": "R/1940",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:38:37.531Z"
+    },
+    "326": {
+      "requestHash": "a5cca50237005c2ef9e8c96c600e978bb31a80718ad45d6c45a14bbbb86c9fed",
+      "signature": "R/1941",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:38:57.310Z"
+    },
+    "327": {
+      "requestHash": "d415eaf840b83743d8f2a7752e0d4a468709cbf9a74003ed3b89c956464e1268",
+      "signature": "R/1942",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:39:08.813Z"
+    },
+    "328": {
+      "requestHash": "40c114787eddd3394fd6dee341e279ae6c023aac19a2822feaa5f8f4693651b6",
+      "signature": "R/1943",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:39:32.113Z"
+    },
+    "329": {
+      "requestHash": "b06387ad77a5c626d3d1d5481b9fe2cbd8dc47ee225b377fb5c3911ddc9f0b5e",
+      "signature": "R/1944",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:39:40.031Z"
+    },
+    "330": {
+      "requestHash": "0453c6288366f11804ace682ddfb3ce596e6ef32e13d7b671bd867db2498ad65",
+      "signature": "R/1945",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:39:48.197Z"
+    },
+    "331": {
+      "requestHash": "e940d601aff39e2007914ae487c843f40cd87456d7c199980ba232ca79146f6a",
+      "signature": "R/1947",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:40:32.418Z"
+    },
+    "332": {
+      "requestHash": "ed34df3657d731fd874eb0143aefcad5af726e82b95c61579ae8badc9b5ac853",
+      "signature": "R/1948",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:41:01.285Z"
+    },
+    "333": {
+      "requestHash": "fb8551520b7a2e875b2cb91c8e2871d7755549471505589ca42247fc086c6958",
+      "signature": "R/1949",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:41:17.186Z"
+    },
+    "334": {
+      "requestHash": "7ea88e0a397c5710fcb689a41a4a12610b6243e15d2133249aec340b3f6f0d6a",
+      "signature": "R/1954",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:41:25.128Z"
+    },
+    "335": {
+      "requestHash": "703cc92fdf4dc245fbe85e78125bcdfc87226f653cddefb8bcd5bd0e186436ea",
+      "signature": "R/1955",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:41:40.873Z"
+    },
+    "336": {
+      "requestHash": "2890bf9cc5e223f81e812d1a21637dfadfd24c3da669a1e3e0444d870288a9b1",
+      "signature": "R/1957",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:41:51.563Z"
+    },
+    "337": {
+      "requestHash": "e7a1314e09af7637aee6ff3df516e433cb8d044737dfa9e844c296d4929d9a3f",
+      "signature": "R/1958",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:41:59.793Z"
+    },
+    "338": {
+      "requestHash": "762a95fba5d568897e347817f6464855e6dab5b9caa14db2af921ab78476842f",
+      "signature": "R/1959",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:42:24.927Z"
+    },
+    "339": {
+      "requestHash": "d05fa2be2d16ff45660c405f7e311dd67946ba258974d9c8033603ce92a3abf1",
+      "signature": "R/1960",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:42:38.451Z"
+    },
+    "340": {
+      "requestHash": "95a7ff5277e39a6cf924d3e7025aa17ce6c726890d1fa9adeb062dd9b55663da",
+      "signature": "R/1961",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:42:54.357Z"
+    },
+    "341": {
+      "requestHash": "3bc195fc56d0e3a833d724d71085c901e2bf5075122f23d7c50b1e0fa28f1bde",
+      "signature": "R/1964",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:43:18.235Z"
+    },
+    "342": {
+      "requestHash": "604dc792a5f1b9e40dda5946ba5b9e624a459e053e4af2e61706fd4bf2501b7a",
+      "signature": "R/1966",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:44:04.026Z"
+    },
+    "343": {
+      "requestHash": "e070f2d5f6dab307e23867a6985c95d515d821018a8ac6959a6ef764a23d23c4",
+      "signature": "R/1967",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:44:16.258Z"
+    },
+    "344": {
+      "requestHash": "1778b7b12fcaf69268bfebc8f545f8113c4b9c6426b6405d586a41a62fa8d858",
+      "signature": "R/1969",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:44:24.584Z"
+    },
+    "345": {
+      "requestHash": "d9737e7117c8c48507df26c81d4fbdd345c6966e1d935229d9ea09e2e75e2def",
+      "signature": "R/1971",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:45:09.942Z"
+    },
+    "346": {
+      "requestHash": "ccbfbc596f39c54ba7051737c3436bb07d0714bf17b49cc7085ee98476c71988",
+      "signature": "R/1972",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:46:00.961Z"
+    },
+    "347": {
+      "requestHash": "3598772fec37ff2f7cc95110988e8d8de31c76749685afe5ab568ce20c2f8823",
+      "signature": "R/1973",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:46:14.341Z"
+    },
+    "348": {
+      "requestHash": "491fe5ae00a21ea2c1707857b390cc40c4c9f4cdad9317430aede05f6cd23879",
+      "signature": "R/1974",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:46:30.056Z"
+    },
+    "349": {
+      "requestHash": "3ceb3364606cd87d679e21d3087daac731c7a4fae445bc73c83f92c3f1202162",
+      "signature": "R/1975",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:05.552Z"
+    },
+    "350": {
+      "requestHash": "43098ada573f3433f90c8cc79d74b3c016269bc282b4b22530495fb31b6a0eb6",
+      "signature": "R/1992",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:13.578Z"
+    },
+    "351": {
+      "requestHash": "301cb61a39c0376f104621fecd47bc485299aa03afe3cf57988aed454b96b646",
+      "signature": "R/20",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:22.125Z"
+    },
+    "352": {
+      "requestHash": "3f14d5c02de01f22dfb6aab007fa74cf226b6c6df697976a0d3879ce2b983d7c",
+      "signature": "R/200",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:30.858Z"
+    },
+    "353": {
+      "requestHash": "12f4a1c2b20e5e902e0f02fb1b166c276ad755fdd55611c42d40e42088bbb9e9",
+      "signature": "R/2016",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:38.711Z"
+    },
+    "354": {
+      "requestHash": "a78868fe841b701efd81e3122ffe0c8c533a02a6062d710a90b18a6ef9d25c9d",
+      "signature": "R/2022",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:47:54.500Z"
+    },
+    "355": {
+      "requestHash": "8dce90c51ab54c4007346e0b2a687834ee9d19ea8728e89719579b70cb092f04",
+      "signature": "R/2025",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:48:10.361Z"
+    },
+    "356": {
+      "requestHash": "85fb11322fddf44a36673a588dc03fda182bef7f060e7083a0265c0bb07baf7d",
+      "signature": "R/2032",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:48:34.534Z"
+    },
+    "357": {
+      "requestHash": "d6ef25af86a58ff263f927515f6bbc5d30669d4827483f1263eee88f1251e70b",
+      "signature": "R/2033",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:48:43.575Z"
+    },
+    "358": {
+      "requestHash": "caf33ffa34d39e08238bdf7c86c0534d47e399a2d66721dc62602e178f914eb4",
+      "signature": "R/2034",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:48:52.045Z"
+    },
+    "359": {
+      "requestHash": "a7898a4445236ea8f3b994f46dadcc0ff1f57912c47c837a72e64e8c76e9dcb7",
+      "signature": "R/2035",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:49:01.401Z"
+    },
+    "360": {
+      "requestHash": "0dea09ca587590da4c2b6b8057c45c08984c0328d7924ee092d302c9e6eb8460",
+      "signature": "R/2036",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:49:09.616Z"
+    },
+    "361": {
+      "requestHash": "d6dc2c61ff47229b47fa8644b3bdd485aa9446abf3f56c945f5c9185ca7535dd",
+      "signature": "R/2037",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:49:53.714Z"
+    },
+    "362": {
+      "requestHash": "ac5b588489142abeed01e494d4c67968cf949bfc94ecea0080df7021e782a23c",
+      "signature": "R/2038",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:50:23.655Z"
+    },
+    "363": {
+      "requestHash": "089caede55d2251b0bc744cb5a34601fefe5a1488210b3e3a0281f4a38e73c29",
+      "signature": "R/2039",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:50:37.398Z"
+    },
+    "364": {
+      "requestHash": "1e19bb584172851f2ec362ef3d475d17f7e7db53985c7534a36568e443bd5caf",
+      "signature": "R/2040",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:50:46.163Z"
+    },
+    "365": {
+      "requestHash": "54f33c52613453ce9646f093ce71593b95571f5f718cb6e3c217245949c2baee",
+      "signature": "R/2041",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:50:57.310Z"
+    },
+    "366": {
+      "requestHash": "aed7b9a5cce1d4d8ff28970397baf3941592d0ca87fd8fb3c1a478bde97e0fde",
+      "signature": "R/2042",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:51:13.047Z"
+    },
+    "367": {
+      "requestHash": "c80441e27510901e807dbb332e6b73167ef24aebbc21da600adf0a78fb1f4542",
+      "signature": "R/2045",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:51:21.141Z"
+    },
+    "368": {
+      "requestHash": "e0f812af3b2acf2488d7559c107fec662fefbf5082e517355ba99f6fd0c93703",
+      "signature": "R/2047",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:51:54.694Z"
+    },
+    "369": {
+      "requestHash": "a1586bf5c73a3fbfeb5ab321e31a41a66341e61d81251ead99e3130625f10633",
+      "signature": "R/2048",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:52:29.042Z"
+    },
+    "370": {
+      "requestHash": "139485e5edc3ad42f3463938e4ba7092465447853f459dbdf511dab8ff2eaa7c",
+      "signature": "R/205",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:52:56.776Z"
+    },
+    "371": {
+      "requestHash": "7db765cfac35636169121de8a08b6a2c409d9baafe39842b5081bb9a2cf16e32",
+      "signature": "R/2054",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:53:10.373Z"
+    },
+    "372": {
+      "requestHash": "404b0abb18b39380313232039f9d84683ab711e5cae255da119fc2cd48030914",
+      "signature": "R/2058",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:53:24.119Z"
+    },
+    "373": {
+      "requestHash": "b4b93daf54f0024217885760a24f1e5e0c5bc46d3629f3f416b8ee07e34293bb",
+      "signature": "R/2061",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:53:32.297Z"
+    },
+    "374": {
+      "requestHash": "61bebdd1fce722b14d11127329519d3b235da6d0693e7f7ffdef851aa1b1f128",
+      "signature": "R/2062",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:53:40.555Z"
+    },
+    "375": {
+      "requestHash": "3fd8f2a1ab26fa7a1af2bf06429842908c563d14c684af378a31002b5eb3a6c9",
+      "signature": "R/2063",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:53:56.385Z"
+    },
+    "376": {
+      "requestHash": "6a0717c56d75c1ac7b3dc575555e5800aba2a8574b4db2588367eea646cee429",
+      "signature": "R/2064",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:54:04.409Z"
+    },
+    "377": {
+      "requestHash": "f1d07332b32aa05fea4dce4e418067fbd486568b80e221423b69a810091b5c3c",
+      "signature": "R/2072",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:54:38.093Z"
+    },
+    "378": {
+      "requestHash": "e742b3a2f6594083a421c26328bd20f1036c121082f4b210e0dc2f2815610ef0",
+      "signature": "R/2080",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:54:51.876Z"
+    },
+    "379": {
+      "requestHash": "859903b9e77ae8d25473e8f3ce319c7d322084942de8aa9c067005afd8bec6f3",
+      "signature": "R/2085",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T13:55:16.505Z"
+    },
+    "380": {
+      "requestHash": "e65826e39080ff392a063df903a1d16eeeebcee08db66a3898347bc5c4be15e9",
+      "signature": "R/2094",
+      "status": "error",
+      "updatedAt": "2026-11-11T13:55:39.857Z"
+    },
+    "381": {
+      "requestHash": "0ca38447861c964746ba331ee39cc473d0dc757be74bce83f019ddb53bb45651",
+      "signature": "R/2096",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:55:53.218Z"
+    },
+    "382": {
+      "requestHash": "c80557cb208a6da0513a35f538df9f52912d5a1708351ba726bd9a13b802b2b9",
+      "signature": "R/2098",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T13:55:58.787Z"
+    },
+    "383": {
+      "requestHash": "252c42b74d978b2f48e6f68451fe632bbcb7171a5d474cb286d3033249c574fb",
+      "signature": "R/21",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:56:07.757Z"
+    },
+    "384": {
+      "requestHash": "f5dab7248649a219ae1a074030a102bc0b478d84a2afa15eeec1e23893a32235",
+      "signature": "R/2100",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:56:15.986Z"
+    },
+    "385": {
+      "requestHash": "2c927aa7e09cc925ce635ef3722d79afb6fba8cecd787238ca6478c7fef129cc",
+      "signature": "R/2107",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:56:30.024Z"
+    },
+    "386": {
+      "requestHash": "ce1ffd86aa9cd07b40e7e7564112cf94dc445a22be594396ad5a02df344f93b0",
+      "signature": "R/2112",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:56:38.727Z"
+    },
+    "387": {
+      "requestHash": "3f9fdf32ce3e6fb70eced0c27e845b964103ba0a5fff35756ffc29210d06002b",
+      "signature": "R/2115",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:56:54.345Z"
+    },
+    "388": {
+      "requestHash": "fff3f5ee607e3ab7e271e3faa5484b77d2319c770b1fde86f7d784c7eaa0bb3c",
+      "signature": "R/2116",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:57:05.224Z"
+    },
+    "389": {
+      "requestHash": "b31d8f888a10e27b123044cab483779bc4cc934eaf1792b2924edfbfbf62d520",
+      "signature": "R/2118",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:57:14.249Z"
+    },
+    "390": {
+      "requestHash": "8e205c8d86511b2510dedf3f4d19273fe75dc20d6b547d02e32d64d5666e3895",
+      "signature": "R/2120",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:57:22.408Z"
+    },
+    "391": {
+      "requestHash": "d9be65a5658dd4a78c3418cbf16050dccd98af13a9b6ba20f57dcffc2d9202bf",
+      "signature": "R/2122",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:57:30.226Z"
+    },
+    "392": {
+      "requestHash": "ae1d9a219b60eb250c18c243abfdf7d76855b10cbfa829ebd467b65238c1b145",
+      "signature": "R/2126",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:57:45.852Z"
+    },
+    "393": {
+      "requestHash": "61141a72a19f708416b64c94a125ca383bf20e706cf3c703e52fde5cf31cc5d6",
+      "signature": "R/2127",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:58:06.745Z"
+    },
+    "394": {
+      "requestHash": "7183f07df7c9a1546be677e775259e750363efd252afe7069ff0fa3a91405e45",
+      "signature": "R/2129",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:58:22.466Z"
+    },
+    "395": {
+      "requestHash": "d01e5da951eb49e7860a5cda1d861fbc5eb33153d01d322708faf523482e6056",
+      "signature": "R/213",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:58:31.230Z"
+    },
+    "396": {
+      "requestHash": "dd4f82001d7162377010dd5ab322157c8d795d32b74eaf3ac59f0074f98b8d78",
+      "signature": "R/2131",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:58:38.961Z"
+    },
+    "397": {
+      "requestHash": "5cd6e69bad15052f04a929011d02b64bdfc0191e82edd02d941c6387cdd03ac4",
+      "signature": "R/2134",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:58:50.092Z"
+    },
+    "398": {
+      "requestHash": "9ab0f136e4ab233ffadbb212b9800a830548571be3f13e24f8fc035a70e4a0f3",
+      "signature": "R/2135",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:59:03.726Z"
+    },
+    "399": {
+      "requestHash": "c852c7bdeeebe3436643309b4a54d1135a0c1fe16696e35c295923274e639ad3",
+      "signature": "R/2138",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:59:19.517Z"
+    },
+    "400": {
+      "requestHash": "21920a8de5222ccc291c2f8fa61534926dc3f706cced52616aecca4acf33676b",
+      "signature": "R/2139",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:59:27.868Z"
+    },
+    "401": {
+      "requestHash": "ffe172fb832008e7d609a649b36d9a96e79ca569e6ab38af458f6158cf808efb",
+      "signature": "R/2140",
+      "status": "sin_fotos_de_menu_en_esta_vista",
+      "updatedAt": "2026-11-11T13:59:39.774Z"
+    },
+    "402": {
+      "requestHash": "05a8a2aea8ae8db54ffa9ea34ad4b7330123e36bc85100eed6c8b1c8e2ec3645",
+      "signature": "R/2142",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T13:59:48.201Z"
+    },
+    "403": {
+      "requestHash": "e84dba021dc3a2d831c746d6c56da90508f4a3d599050bab1ddbbd5b4571b30e",
+      "signature": "R/2144",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:00:11.236Z"
+    },
+    "404": {
+      "requestHash": "695bdeaa30a93b9147c2808aa98a3a433ebfcd4f15a2f99fdb56142631709097",
+      "signature": "R/2147",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:00:18.919Z"
+    },
+    "405": {
+      "requestHash": "320b8dd67ab6d5323107b50c6d6f62e65c174eea4ba7f31929d37b779ef44ab8",
+      "signature": "R/2149",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:00:26.717Z"
+    },
+    "406": {
+      "requestHash": "59c8cb577ee3aed65afcf4725d33ba1c738a98c4794b760311751d13d81bc014",
+      "signature": "R/215",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:01:10.099Z"
+    },
+    "407": {
+      "requestHash": "c6f7462b5303a603c90bdc7f1dcbac577d27d335889a174881af67a8ac4b7c9d",
+      "signature": "R/2150",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:01:18.150Z"
+    },
+    "408": {
+      "requestHash": "589e85e68cd9a98250aa8f02b984483c0eba12eeac5dab634b5dcb56a857568e",
+      "signature": "R/216",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T14:01:23.672Z"
+    },
+    "409": {
+      "requestHash": "a6631c2b30eaf76fbb134f6684a6ab0d6619f2a74ac288f2a401ae422d59e85f",
+      "signature": "R/2167",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:01:37.269Z"
+    },
+    "410": {
+      "requestHash": "b6b58014192fd8ebd84475632f29077a61ca14af746e543a08843f5257ac13b4",
+      "signature": "R/2170",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:01:44.975Z"
+    },
+    "411": {
+      "requestHash": "b1c037f8507cfefeff71243c465aaf94abce28d896316d301c148e0c80bdec06",
+      "signature": "R/2171",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:02:12.188Z"
+    },
+    "412": {
+      "requestHash": "e9cb1b5df1a372e4dc94303bc452d1461b3bacbee7bd5cdae230f6d95120aa52",
+      "signature": "R/2177",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:02:27.793Z"
+    },
+    "413": {
+      "requestHash": "4e736522c8eadc885e7c68f7899ecee529022d145a0eb6acbe32b9c1ea961b45",
+      "signature": "R/2179",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:02:48.053Z"
+    },
+    "414": {
+      "requestHash": "4fbcdeb953756395ea71f55b83d1cc2be6c5c57d3dca8ce091d6ad31aab3b299",
+      "signature": "R/219",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:02:55.490Z"
+    },
+    "415": {
+      "requestHash": "5b7900c9d9ec0583692bb4b529bf0293d2c9da113c0f8c8e3894422d6f285011",
+      "signature": "R/220",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:03:03.121Z"
+    },
+    "416": {
+      "requestHash": "0aee699267dd05e15322cb1f4849b1daaed150a629969f650e7f273b6129a051",
+      "signature": "R/2202",
+      "status": "sin_fotos_de_menu_en_esta_vista",
+      "updatedAt": "2026-11-11T14:03:13.932Z"
+    },
+    "417": {
+      "requestHash": "c60989dc1ce42e10df7b8eacb0cba44d3c7f7699ba212008264b7fea57114458",
+      "signature": "R/2209",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:03:38.480Z"
+    },
+    "418": {
+      "requestHash": "c20d79ba49440240919634d9f50fbc31a7366f64eb384a203ccbe3fe816a71ed",
+      "signature": "R/221",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:03:47.373Z"
+    },
+    "419": {
+      "requestHash": "39f01f95e9a2720dbf62c22616a212142774c278c762350e48ab5e0fa93ab829",
+      "signature": "R/2210",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:04:11.521Z"
+    },
+    "420": {
+      "requestHash": "d716554f645d91c81f9e6ad7171708fcc57fcc941d629a66d698ef0d5139269a",
+      "signature": "R/2211",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:04:24.646Z"
+    },
+    "421": {
+      "requestHash": "c6ea3547094a324e55717f010904368d28b845cdb0a7b5d47fef09d7ec612242",
+      "signature": "R/2213",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:04:40.190Z"
+    },
+    "422": {
+      "requestHash": "d176c74b2ba66edc8d37239634cdc3a76431f34d9ef6bc52fcd8c0b87e47538f",
+      "signature": "R/2214",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:04:53.530Z"
+    },
+    "423": {
+      "requestHash": "5bf1f078e66124a3c335fd055b5732ab89d73a735d5df539b49434560f718a8b",
+      "signature": "R/2215",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:05:01.791Z"
+    },
+    "424": {
+      "requestHash": "1a96228c29d28e727fab050fdd33b1b4532850339f22bc66a3d2ee1d493ee6a3",
+      "signature": "R/2216",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:05:28.269Z"
+    },
+    "425": {
+      "requestHash": "e87b319329eeffefd79990f1821dbd8f4ce364e692823376a4e4d647d5053f66",
+      "signature": "R/2218",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:05:41.781Z"
+    },
+    "426": {
+      "requestHash": "6a49d01e2c82330dc36fb61e0fbafaf4a34f3464814ab28a1ba4ef790f0cee63",
+      "signature": "R/222",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:05:53.065Z"
+    },
+    "427": {
+      "requestHash": "021a3f71e95e5f96a7d3ac64d6a908c5c3e22fc19cc56fe2d01fa760d058de50",
+      "signature": "R/2220",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:06:01.448Z"
+    },
+    "428": {
+      "requestHash": "eeda857d356604ba1595e53f4d9d6c0b81bfb8cbfd4bb1e1cf88b6c72a177665",
+      "signature": "R/2221",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:06:09.316Z"
+    },
+    "429": {
+      "requestHash": "b3d6d7af4e20c9137ebcbe60ad33de44394b72a8f0b1bffc13d5d1246abcdeee",
+      "signature": "R/2222",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:06:25.080Z"
+    },
+    "430": {
+      "requestHash": "9234fdd5a3903bc8f904069a4389b212fac5f3be243d2b67a964178ee1153368",
+      "signature": "R/2223",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:06:52.911Z"
+    },
+    "431": {
+      "requestHash": "7822127f722919113f3cc5b9be298cdde0b658fce294b55f3c7252127be59a51",
+      "signature": "R/2224",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:07:01.524Z"
+    },
+    "432": {
+      "requestHash": "6337db342de563118ac20811ca9f5fbe5a66208b39246b9e7032daf072491f18",
+      "signature": "R/2225",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:07:09.268Z"
+    },
+    "433": {
+      "requestHash": "bb47192341d9bcb54ea8ae6c47a5aaf022ef4b3d32c66c9a27538cbb7efca88c",
+      "signature": "R/2226",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:07:43.750Z"
+    },
+    "434": {
+      "requestHash": "c10a8deab06d5b7b5b642b3811ff15f614d34f136ec07510efe28e5fe802840b",
+      "signature": "R/2227",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:08:07.188Z"
+    },
+    "435": {
+      "requestHash": "806f33c873494b32864070c779b757582c64ef9d0ca78e750891f0cb75407e9f",
+      "signature": "R/2228",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:08:15.430Z"
+    },
+    "436": {
+      "requestHash": "d3f2a147664f2fefef6162ddd804eb8f18fba7e73c8721b492d781603319e22c",
+      "signature": "R/223",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:08:38.641Z"
+    },
+    "437": {
+      "requestHash": "ef2cc37e080ee973d713180ab1c1f743b9b891a9ebf3a81a01a3d2005d05722b",
+      "signature": "R/2231",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:09:37.045Z"
+    },
+    "438": {
+      "requestHash": "ab8b9bb8d702f8a0068864ecf9a55056acb602dc1dfc4c522174fe142e3c2bd8",
+      "signature": "R/2233",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:10:02.095Z"
+    },
+    "439": {
+      "requestHash": "75945c0b9e3a83d01fe1b6248df26fcea336cba64919eeb55aa735aedecbd145",
+      "signature": "R/2235",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:10:46.553Z"
+    },
+    "440": {
+      "requestHash": "afbc5531478fb7d6ffc099e4084eba7c3a1072d78e0f4c2d224cc7a7ddc81126",
+      "signature": "R/2238",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:02.254Z"
+    },
+    "441": {
+      "requestHash": "acc1dee1fc6cf29f0307a350829346ef197e9cd8a94157870192178ffce68975",
+      "signature": "R/2243",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:10.410Z"
+    },
+    "442": {
+      "requestHash": "91ab82d1b3f49410a86026433795e5deeb7c244a8f18d734e91065f96cf44984",
+      "signature": "R/2246",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:19.136Z"
+    },
+    "443": {
+      "requestHash": "cdc56fffd1b3cdd57a5a8cfe143d6a2fe11009d9bef4976c9aba41f5a47228f2",
+      "signature": "R/2250",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:32.813Z"
+    },
+    "444": {
+      "requestHash": "90f05ae39b531a352dd85709672661392c64a0e9163f198125a490ea17c2c90c",
+      "signature": "R/2252",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:46.452Z"
+    },
+    "445": {
+      "requestHash": "f64c0d67f2752415f6c7a7bbef53c46db82537094e2241fa700595bc23466f9c",
+      "signature": "R/2253",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:11:54.896Z"
+    },
+    "446": {
+      "requestHash": "dddae8d6ab0b795d12a5501099febbacef576c0cce0e5c042916940491993633",
+      "signature": "R/2262",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:12:08.510Z"
+    },
+    "447": {
+      "requestHash": "9b10ea7c14ae87502440464eda46b8980225d8d54e72af78a298b5d857afc105",
+      "signature": "R/2266",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:12:32.582Z"
+    },
+    "448": {
+      "requestHash": "6828923ed3917f749d69491f203f6445b86250bda540b55189afd0921d64f3b6",
+      "signature": "R/2268",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:12:41.137Z"
+    },
+    "449": {
+      "requestHash": "c84f4992280dd9acddfff9177623b3b0bf61295437dfa27a404c6b591d28b5eb",
+      "signature": "R/2269",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:12:52.283Z"
+    },
+    "450": {
+      "requestHash": "dc6171b75cd3cda1f07cb04cb68ecad8192e3a3875b101e882755313af040824",
+      "signature": "R/227",
+      "status": "sin_coincidencia_confirmada",
+      "updatedAt": "2026-11-11T14:12:57.958Z"
+    },
+    "451": {
+      "requestHash": "ad113100ca535f042d8f119656f51db60503e393445df0153243548cdb233373",
+      "signature": "R/2271",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:13:09.285Z"
+    },
+    "452": {
+      "requestHash": "18df9f57de651d4671dad7e5719f890cb4eb63b8b61ff09e204faef645666c86",
+      "signature": "R/2272",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:13:33.082Z"
+    },
+    "453": {
+      "requestHash": "a580521acbd1c76262f1e16d3c0bfb29f1c1618e40001dba54b875f6a9e3d69d",
+      "signature": "R/2278",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:14:58.259Z"
+    },
+    "454": {
+      "requestHash": "18d092323c9c87ac9acfc8bdece093d4db958279f7a49866cc1d87580f3dff4a",
+      "signature": "R/2279",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:15:07.234Z"
+    },
+    "455": {
+      "requestHash": "4a10951f106d3caa8bc21d4ba0285024354f9880e4de50924a93ca840770f5c8",
+      "signature": "R/2283",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:15:37.314Z"
+    },
+    "456": {
+      "requestHash": "a98f72b30ab6fdc05f441f6467ebd6c7591e588dd18a2efde91e69d37c3a8c95",
+      "signature": "R/2284",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:15:51.250Z"
+    },
+    "457": {
+      "requestHash": "4756862cb5874f7337c246709893eea806882183588fb35e038f2d696ab3b197",
+      "signature": "R/2285",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:15:59.919Z"
+    },
+    "458": {
+      "requestHash": "f68b7252347e484c3f427c28a7a67d47fb28b52b44f9a670ff279b7fb976c93d",
+      "signature": "R/2286",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:16:08.256Z"
+    },
+    "459": {
+      "requestHash": "207552aa868454283380249ff25ad2eba83309755f3e4373492025a67548df04",
+      "signature": "R/2287",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:16:42.072Z"
+    },
+    "460": {
+      "requestHash": "321259fa4f4b9caf46c211ab6f9124913a60e5d28f9f0e1538d3b80d64d58c0b",
+      "signature": "R/2288",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:16:51.338Z"
+    },
+    "461": {
+      "requestHash": "f53758eb9aa3807e3a562aed8db012229623ae7f7fc9551ec37459eedd02e8f4",
+      "signature": "R/2289",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:16:59.490Z"
+    },
+    "462": {
+      "requestHash": "9b4a3f5973aa07882afeeefa009a2b9ee9ce7c489409cb23a198c3271e57ee21",
+      "signature": "R/2290",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:17:45.157Z"
+    },
+    "463": {
+      "requestHash": "f24417b0d80146c505aba628ae6e78049e5fc3af60e79d3fd4717581f3ea9c59",
+      "signature": "R/2291",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:18:00.848Z"
+    },
+    "464": {
+      "requestHash": "f8c972ac74ee431fbb8d07e36e825d5fe30eb8e9fd9e9da2538710400f6793eb",
+      "signature": "R/2295",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:18:11.781Z"
+    },
+    "465": {
+      "requestHash": "3bfe3777621688b290077e874fccba97b7a6762e7dee7d0a928bc43fc2bf82a2",
+      "signature": "R/2297",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:18:27.583Z"
+    },
+    "466": {
+      "requestHash": "1f927f10e9e77e25902feee7d215fbdc874dedf02aaaf23f781a9a69bc9d8c58",
+      "signature": "R/2298",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:18:36.223Z"
+    },
+    "467": {
+      "requestHash": "dcee3c6bd87a2074934b2cf427ba3a74aaf6e10815246a89159219ddbadef1c6",
+      "signature": "R/230",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:19:26.483Z"
+    },
+    "468": {
+      "requestHash": "85a595837238462b92149884d1e1d2dd373bbccc0433cd6efae4836896f71e0e",
+      "signature": "R/2300",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:19:50.001Z"
+    },
+    "469": {
+      "requestHash": "a6ae789fa44d5b408ddc3b1b426d9b4eef8255a0805271686b719432b1ea77db",
+      "signature": "R/2301",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:20:03.733Z"
+    },
+    "470": {
+      "requestHash": "35065f7da93a8fbc87cb01ef77ecaa9ede8a461e3b662da9de61c1e89f0c6d49",
+      "signature": "R/2302",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:20:18.233Z"
+    },
+    "471": {
+      "requestHash": "7f4db4083e3ea1444704e97fd55f7050474f26db8bc8effd032b9c88ce4a9d31",
+      "signature": "R/2303",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:20:41.987Z"
+    },
+    "472": {
+      "requestHash": "25dd40ab794a89650a790c4aa1e5c2792a54c8cd8263fe702d59048eb1de20ad",
+      "signature": "R/2306",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:21:06.086Z"
+    },
+    "473": {
+      "requestHash": "cd75c487b6aa925ab68cc9721cb45f4d02f74230fc9ef94c002da304cd386140",
+      "signature": "R/2308",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:21:30.874Z"
+    },
+    "474": {
+      "requestHash": "0d7a6cb8ec426efbf254f9020643779e32c8468fc7988a206b7d998775d2dc0f",
+      "signature": "R/2309",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:21:42.074Z"
+    },
+    "475": {
+      "requestHash": "63699591eec824685088e9081aae0eb224b079ecf28761741b036136d84ff023",
+      "signature": "R/231",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:21:51.017Z"
+    },
+    "476": {
+      "requestHash": "6924be2f6381f05db44fb2c8e16a850cb5332e19b9d9730d63b7bcd19db7042d",
+      "signature": "R/2311",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:04.839Z"
+    },
+    "477": {
+      "requestHash": "ede33fd2ef359618a38c832823d4e184ec6a8a45a1135a2bbbfcc566c459cfe8",
+      "signature": "R/2312",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:13.023Z"
+    },
+    "478": {
+      "requestHash": "e99d8f6665f6b768f0998a8d12736a0b12bfed837cf61601c514a101ecb19cc5",
+      "signature": "R/2314",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:26.972Z"
+    },
+    "479": {
+      "requestHash": "b1f8cf0607d9a155b3a54ec2ef319b809d87864e4528646438252b1b5ffeacd6",
+      "signature": "R/2316",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:35.939Z"
+    },
+    "480": {
+      "requestHash": "74fffeeeab94027abdd095d177234ef1d18c627809f0c752d1025f4a28d17c01",
+      "signature": "R/2317",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:46.839Z"
+    },
+    "481": {
+      "requestHash": "847bc261f1287c9b24920d959adf3037f3598c1a3dd2006d8b595b62c228e74b",
+      "signature": "R/2319",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:22:56.638Z"
+    },
+    "482": {
+      "requestHash": "8f0b68bde40c2a468b1186bf619ef2d960a36e1230f0bc5bd8e96e33a737b43f",
+      "signature": "R/2321",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:23:20.301Z"
+    },
+    "483": {
+      "requestHash": "b911084662032c71306ab65a6c711a3cf05405a3a080c5e53b922ed4a7ceb356",
+      "signature": "R/2323",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:23:28.885Z"
+    },
+    "484": {
+      "requestHash": "ba487413be152446eab22b9b36db71fc2f4c8f5b539be3d22632edc9aa6497fb",
+      "signature": "R/2325",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:24:01.311Z"
+    },
+    "485": {
+      "requestHash": "e6424b7bf2f29815a5220649343324b4cf642d42a92128741688ebca5e7634fe",
+      "signature": "R/2326",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:24:09.719Z"
+    },
+    "486": {
+      "requestHash": "4db28d627bcfa3e983162a56c78730b8690f2f567dd42dab8322bf6699ff54c8",
+      "signature": "R/2328",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:24:25.586Z"
+    },
+    "487": {
+      "requestHash": "c4d775eea8d43a3dec1a79d812c496bdf1bb177b3ea6dfeb5bac144e7ecad1b1",
+      "signature": "R/2332",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:24:34.391Z"
+    },
+    "488": {
+      "requestHash": "82a2929e882c3e79aa9f20d4601bfa04b83e014234715a0bd8914837b36bb655",
+      "signature": "R/2336",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:24:42.575Z"
+    },
+    "489": {
+      "requestHash": "6dd0d40052e9f9cbdcff2abbaa403b8c2b9451fef5c5c27871dc70d698b0ed96",
+      "signature": "R/2337",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:24:58.309Z"
+    },
+    "490": {
+      "requestHash": "91e1940a6780cef95448d0e6890cf2aed579e54d032b27aaaacff9de9be1d6df",
+      "signature": "R/2342",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:25:14.134Z"
+    },
+    "491": {
+      "requestHash": "37865c6d521fb0697d657540e2c5c54aae6091301acb7ae14764ceacf8cd2cd8",
+      "signature": "R/2343",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:25:22.968Z"
+    },
+    "492": {
+      "requestHash": "88a51e478873200f876ed33278b374729f84ef59a5feebbdd1b837bd03fa6483",
+      "signature": "R/2345",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:25:31.520Z"
+    },
+    "493": {
+      "requestHash": "55fffce2ddd18e71dddddde03a0152c3b05e92e6752b528969f99a5c7d5e4e89",
+      "signature": "R/2347",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:25:45.452Z"
+    },
+    "494": {
+      "requestHash": "a0b7de148d6ef930b24e326f00bdd7dd107157053958980ff51fdf40408f4db8",
+      "signature": "R/2348",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:26:30.928Z"
+    },
+    "495": {
+      "requestHash": "e84bdc86d6e093d7a6bedc07b97cb316a5ec5d3d4699ab0ef8f2e36fe217327e",
+      "signature": "R/2350",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:26:47.054Z"
+    },
+    "496": {
+      "requestHash": "483db42f0f29101e2727ef3467fe2a246f1e285e23819c81cb9518278fba7dca",
+      "signature": "R/2351",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:27:17.655Z"
+    },
+    "497": {
+      "requestHash": "fac1d408687f4436d79a7ea5b0f7a38b70276da9c8a69704053dfffccda5a55b",
+      "signature": "R/2353",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:27:59.331Z"
+    },
+    "498": {
+      "requestHash": "842211d7e3ba349c5f08385c7aceac8c6f36c30fb0c30e6e24b3d9ee6ff0f529",
+      "signature": "R/2356",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:28:09.550Z"
+    },
+    "499": {
+      "requestHash": "eafba4409079d6f8aa547979ed4de8f22a1c4e5791ab33905b0afa0f0b9810a8",
+      "signature": "R/2357",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:28:42.990Z"
+    },
+    "500": {
+      "requestHash": "5083ba5f3763d89bcab5d6ddfbdd045e07e0e3878656a5319b83570c85ff9ab8",
+      "signature": "R/2361",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:28:57.565Z"
+    },
+    "501": {
+      "requestHash": "03ae3096da174c90ea259eda9aefe5d0fab09349ee19de5779666d7679c1ab35",
+      "signature": "R/2363",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:29:06.350Z"
+    },
+    "502": {
+      "requestHash": "983406e1479ec0bc843ea4f8da456e75e4a6597dd9d7be1380d6c52c6dccba34",
+      "signature": "R/2365",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:29:20.651Z"
+    },
+    "503": {
+      "requestHash": "1927bcd3a79947f6f5070b128ddb4a9e74f1e9d171722552f2eb10c07512c8dd",
+      "signature": "R/2366",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:29:28.678Z"
+    },
+    "504": {
+      "requestHash": "6b1956b5a3f2b1881fa5c78e8bc9e2e87df9d12fb01e3bbcbf28fac41499b800",
+      "signature": "R/2368",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:30:12.777Z"
+    },
+    "505": {
+      "requestHash": "65556330d4b19b928adc596fff312903d6b73c856dbccad467a9ef38ae3c39b6",
+      "signature": "R/2369",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:30:21.200Z"
+    },
+    "506": {
+      "requestHash": "316d024bd196fe7dc88a10e8a4b0a2e906a51f28cd1e77e1f8793d8dd174691f",
+      "signature": "R/237",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:30:29.144Z"
+    },
+    "507": {
+      "requestHash": "4514dcb6b9708a816325b7a9d80d89183ad327e56ea2b167454521cc4b6ba25f",
+      "signature": "R/2371",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:30:53.584Z"
+    },
+    "508": {
+      "requestHash": "f4353b5339a3dcbd3f6042a4bf851498e182afbdc1f1d11b559c1cf72e367e52",
+      "signature": "R/2372",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:31:07.809Z"
+    },
+    "509": {
+      "requestHash": "a5819b2356e66886920138c4e1031e24842fd3609da8c7892edd9b5107f285f3",
+      "signature": "R/2374",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:31:21.439Z"
+    },
+    "510": {
+      "requestHash": "afcc934d09dcdbf06a96165e47458f87e9705289e6acfe4651ba6a51cd7e2e75",
+      "signature": "R/2375",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:31:55.569Z"
+    },
+    "511": {
+      "requestHash": "f9805a09063775cef16d409fb815fce9ea3a195798af90a68ef99b42f363fdcf",
+      "signature": "R/2376",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:32:11.420Z"
+    },
+    "512": {
+      "requestHash": "708a176b47e23ab5cf4aa4f632c0c6f2d100b0b78d45ab7a2d8f6797d4577a55",
+      "signature": "R/2377",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:32:19.577Z"
+    },
+    "513": {
+      "requestHash": "49ae1f05c77002fd7530244a24f57519bfa8b5f1853e2255ec5930b738598848",
+      "signature": "R/2378",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:32:44.154Z"
+    },
+    "514": {
+      "requestHash": "c8b320b543d9baee1c61271b30bf3508b6d239c07a0434898209d1f494b23dfa",
+      "signature": "R/238",
+      "status": "error",
+      "updatedAt": "2026-11-11T14:33:09.973Z"
+    },
+    "515": {
+      "requestHash": "ad02bba7303a643c5ea9a46704bc2293b47020673b90c93262a651070ab38b48",
+      "signature": "R/2382",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:33:26.139Z"
+    },
+    "516": {
+      "requestHash": "f4e9ce4ed0319b01857d1d22c2131feee9d6d791cdf74ad42a137bd8d7cd2048",
+      "signature": "R/2385",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:33:35.139Z"
+    },
+    "517": {
+      "requestHash": "6747e214e62882929c604b2030a7bb6ec2aaebf0d42051dd8e475c90f44498fc",
+      "signature": "R/2388",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:33:42.800Z"
+    },
+    "518": {
+      "requestHash": "fcc4708c36cd18f95de03b48a397e1f0440a1a1f80cdde3b63c331d3e19ac15b",
+      "signature": "R/2394",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:33:50.470Z"
+    },
+    "519": {
+      "requestHash": "02278232025689d817dfe55bdb6ce7bfb73d2135c7fd6d90a83d27fb23a2b6d4",
+      "signature": "R/2398",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:34:23.858Z"
+    },
+    "520": {
+      "requestHash": "2087f6f052d7fa7ed5f0dc9cfe2ce791a146895a729e00a36636f68e8bf95583",
+      "signature": "R/2399",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:34:39.410Z"
+    },
+    "521": {
+      "requestHash": "113331d5e9a2b2155216c015d14310e15669fe46aca682e08e92eb180847975d",
+      "signature": "R/240",
+      "status": "cartas_recopiladas_pendientes_revision_visual",
+      "updatedAt": "2026-11-11T14:34:59.603Z"
+    },
+    "522": {
+      "requestHash": "79a5517b10160a2294abb0e338b566d98e70dd5d701d47d84820bc918d3b3ad0",
+      "signature": "R/2406",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:35:36.723Z"
+    },
+    "523": {
+      "requestHash": "2d6b9853bd6890b4bdf300caaea5197daa150accc8bf565da019dcb7f3be8c23",
+      "signature": "R/2407",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:35:45.466Z"
+    },
+    "524": {
+      "requestHash": "03c46364db0342e9061ddec9a66ebb4c342c6fa6a9964379c2452f39718f603a",
+      "signature": "R/2409",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:36:11.643Z"
+    },
+    "525": {
+      "requestHash": "5bbd0fdd9163f1ba6b22f5bdf169d5001ccb52b9cc8f39d2fda8f6cd6e4c596f",
+      "signature": "R/241",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:37:06.626Z"
+    },
+    "526": {
+      "requestHash": "cd0d3883bba31de024524670cb329bbd186ac0cc794877dcd1472639aa48773b",
+      "signature": "R/2410",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:37:21.425Z"
+    },
+    "527": {
+      "requestHash": "d861909b3c7986be761c5d06eca72a991133dc8222dc7f24dd8490ab6a0e18d7",
+      "signature": "R/2411",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:37:29.730Z"
+    },
+    "528": {
+      "requestHash": "81f00e946bd2c85547bef4569e1f49de9482999756b992a379e84aee5fd39c6f",
+      "signature": "R/2414",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:37:38.078Z"
+    },
+    "529": {
+      "requestHash": "1018a4042de32126cf0c475a1ab8ec4aa57a4c81e4d062222b3c200dcdc0cb53",
+      "signature": "R/2416",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:37:56.053Z"
+    },
+    "530": {
+      "requestHash": "5e6f3820fa71ca08c065260837c663f160b0f6f69e24d9051fc27568c4e76551",
+      "signature": "R/2417",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:38:04.731Z"
+    },
+    "531": {
+      "requestHash": "e04d4136c9a1435286e4cc64e8ffb376e4dbe4ba9ecf38af17397a356822536b",
+      "signature": "R/242",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:38:13.487Z"
+    },
+    "532": {
+      "requestHash": "56186004ac2d7b9ec90edf55fc2d86553b4c582ef68a6270b37bc3d586ecf0d0",
+      "signature": "R/2429",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:38:56.757Z"
+    },
+    "533": {
+      "requestHash": "97f0c9f21b430b59f5598858c17616431998f2a9966c1dc40c8d6914af0fd900",
+      "signature": "R/2430",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:39:29.881Z"
+    },
+    "534": {
+      "requestHash": "8eece8df5009cf594248f700977ee09ff0e43f333dbcce74655e98b6b84b23b9",
+      "signature": "R/2435",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:39:44.535Z"
+    },
+    "535": {
+      "requestHash": "aa25f89c7d0727894a2edcc3168163dfc2b5924f96bfbacd4f5dd08d2f5c681e",
+      "signature": "R/2439",
+      "status": "pendiente_revision",
+      "updatedAt": "2026-11-11T14:39:58.711Z"
+    }
+  }
+}
