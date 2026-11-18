@@ -2,9 +2,11 @@ import { chromium } from 'playwright';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
-import { profileDirectory } from './browser-profile.js';
-import { hash, readJson, saveJson, acquireLock, ensureRestaurantRecord, reconcileMissingPhotos } from './storage.js';
+import { mapsBrowserExecutable, profileDirectory } from './browser-profile.js';
+import { hash, readJson, saveJson, acquireLock, reconcileMissingPhotos } from './storage.js';
 import { searchExplanation } from './match-maps.js';
+import { isMallorca } from './mallorca.js';
+import { photoRoots, prepareResultFolders, saveRestaurantOutcome } from './results.js';
 import { findRestaurant } from './find-restaurant.js';
 import { collectMenu } from './collect-menu.js';
 
@@ -37,11 +39,18 @@ function selectPending(items, state, { limit, maxPhotos, ids, repeat, retryError
 }
 
 async function loadItems() {
-  const data = await readJson('data/restaurantes-con-ids.geojson');
+  const data = await readJson('data/restaurantes-con-ids.json').catch(error => {
+    if (error.code !== 'ENOENT') throw error;
+    return readJson('data/restaurantes-con-ids.geojson');
+  });
+  if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) {
+    throw new Error('El archivo restaurantes-con-ids debe contener una FeatureCollection GeoJSON.');
+  }
   const mapping = await readJson('data/ids.json');
   const assignments = new Map(mapping.assignments.map(entry => [entry.signatura, entry._id]));
   const seen = new Set();
-  return data.features.filter(f => f.properties.Grup === 'Restaurant' && f.properties.Estat === 'Alta').map(f => {
+  return data.features.filter(({ properties: p }) =>
+    p?.Grup === 'Restaurant' && p.Estat === 'Alta' && isMallorca(p.Municipi)).map(f => {
     const p = f.properties;
     const id = p._id;
     if (!/^[1-9]\d*$/.test(id) || seen.has(id) || assignments.get(p.Signatura) !== id) throw new Error('La fuente y el mapa de IDs no coinciden o contienen duplicados.');
@@ -66,35 +75,43 @@ async function main() {
   const items = await loadItems();
   if (values.all && process.argv.some(arg => arg === '--limit' || arg.startsWith('--limit='))) throw new Error('Elige --all o --limit, no ambos.');
   const options = { ids: values.ids?.split(','), limit: Number(values.limit), maxPhotos: Number(values['max-fotos']), repeat: values.repeat, retryErrors: values['retry-errors'], all: values.all };
-  let state = await reconcileMissingPhotos(compactProgress(await readJson(stateFile, { version, items: {} })));
-  let selection = selectPending(items, state, options);
-  if (!values.execute) { console.log(JSON.stringify({ mode: 'simulacion', total: items.length, pending: selection.pendingCount, selectedCount: selection.selected.length, selected: selection.selected.slice(0,25).map(item => ({ id: item.source.id, name: item.source.name })), maxPhotos: options.maxPhotos }, null, 2)); return; }
-  if (!selection.selected.length) { console.log('No hay pendientes en esta selección; no se ha abierto Chrome.'); return; }
+  if (!values.execute) {
+    const state = await reconcileMissingPhotos(compactProgress(await readJson(stateFile, { version, items: {} })), photoRoots);
+    const selection = selectPending(items, state, options);
+    console.log(JSON.stringify({ mode: 'simulacion', total: items.length, pending: selection.pendingCount, selectedCount: selection.selected.length, selected: selection.selected.slice(0,25).map(item => ({ id: item.source.id, name: item.source.name })), maxPhotos: options.maxPhotos }, null, 2));
+    return;
+  }
   const release = await acquireLock(path.join(root, 'ejecucion.lock'));
   let context;
   let stopped = false;
   const stop = () => { stopped = true; console.log('Interrupción solicitada: se conservará el progreso al terminar la operación actual.'); };
   process.on('SIGINT', stop); process.on('SIGTERM', stop);
   try {
-    state = await reconcileMissingPhotos(compactProgress(await readJson(stateFile, { version, items: {} })));
-    selection = selectPending(items, state, options);
+    const state = await reconcileMissingPhotos(compactProgress(await readJson(stateFile, { version, items: {} })), photoRoots);
+    const selection = selectPending(items, state, options);
+    await prepareResultFolders();
+    for (const { source } of items) {
+      const previous = state.items[source.id];
+      if (previous?.signature === source.signature) await saveRestaurantOutcome(source, previous.status);
+    }
     if (!selection.selected.length) { console.log('No hay pendientes en esta selección; no se ha abierto Chrome.'); return; }
+    const executablePath = await mapsBrowserExecutable();
     console.log(`Iniciando ${selection.selected.length} restaurantes pendientes; máximo ${options.maxPhotos} fotos por restaurante.`);
-    context = await chromium.launchPersistentContext(profileDirectory(), { channel: 'chrome', headless: false, locale: 'es-ES', viewport: { width: 1440, height: 1000 }, acceptDownloads: false });
+    context = await chromium.launchPersistentContext(profileDirectory(), { executablePath, headless: false, locale: 'es-ES', viewport: { width: 1440, height: 1000 }, acceptDownloads: false });
     for (const [position, item] of selection.selected.entries()) {
       if (stopped) break;
       const id = item.source.id;
-      await ensureRestaurantRecord(item.source);
+      if (!state.items[id]) await saveRestaurantOutcome(item.source, 'en_proceso');
       state.items[id] = { requestHash: item.requestHash, signature: item.source.signature, status: 'en_proceso' };
       await saveJson(stateFile, state);
       const page = await context.newPage(); page.setDefaultTimeout(10000);
-      let result = { source: item.source, status: 'en_proceso', date: new Date().toISOString() };
+      const result = { status: 'en_proceso' };
       try {
         result.search = await findRestaurant(page, item);
         result.status = result.search.status;
         if (result.status === 'coincidencia_probable' && !stopped) {
           const match = result.search.candidates.find(candidate => candidate.url === result.search.probableUrl);
-          await ensureRestaurantRecord(item.source, 'cartas', { phone: match?.phone });
+          result.phone = match?.phone;
           result.menu = await collectMenu(page, item.source, result.search.probableUrl, { maxPhotos: options.maxPhotos, shouldStop: () => stopped });
           result.status = result.menu.status;
         }
@@ -105,13 +122,20 @@ async function main() {
         process.exitCode = 1;
       } finally {
         await page.close();
-        state.items[id].status = result.status;
-        state.items[id].updatedAt = new Date().toISOString();
-        await saveJson(stateFile, state);
       }
+      const reason = result.status === 'pendiente_revision' && result.menu?.revalidation
+        ? 'La ficha no superó la segunda comprobación.'
+        : ['pendiente_revision', 'sin_coincidencia_confirmada'].includes(result.status) ? searchExplanation(result.search) : undefined;
+      const folder = await saveRestaurantOutcome(item.source, result.status, {
+        phone: result.phone, reason, listing: result.search?.probableUrl,
+      });
+      state.items[id].status = result.status;
+      state.items[id].updatedAt = new Date().toISOString();
+      await saveJson(stateFile, state);
       console.log(JSON.stringify({ id, name: item.source.name, status: result.status, photos: result.menu?.photos.length ?? 0, newPhotos: result.menu?.photos.filter(p => !p.duplicate).length ?? 0,
         avance: `${position + 1}/${selection.selected.length}`,
-        ...(result.status === 'pendiente_revision' ? { motivo: result.menu?.revalidation ? 'La ficha no superó la segunda comprobación.' : searchExplanation(result.search) } : {}) }));
+        ...(folder ? { carpeta: path.join(folder, id) } : {}),
+        ...(reason ? { motivo: reason } : {}) }));
       if (result.status === 'acceso_interrumpido') { process.exitCode = 1; break; }
       if (!stopped && position < selection.selected.length - 1) await new Promise(resolve => setTimeout(resolve, 3000));
     }

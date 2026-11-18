@@ -1,6 +1,7 @@
-import { candidateDetails, readPageText } from './maps-page.js';
+import { candidateDetails, navigateMaps, readPageText, ready } from './maps-page.js';
 import { assessCandidate } from './match-maps.js';
 import { storePhoto } from './storage.js';
+import { photosRoot } from './results.js';
 
 function viewerImage(url) {
   try {
@@ -45,7 +46,7 @@ export async function collectMenu(page, source, listingUrl, { maxPhotos = 2, sho
   const result = { status: 'sin_fotos_de_menu_en_esta_vista', photos: [], revalidation: assessment, identity: 'coincidencia_probable' };
   const listing = candidate.url;
   for (let index = 1; index <= maxPhotos && !shouldStop(); index++) {
-    if (index > 1) { await page.goto(listing, { waitUntil: 'domcontentloaded', timeout: 45000 }); }
+    if (index > 1) { await navigateMaps(page, listing); await ready(page); }
     const panel = page.getByRole('main');
     const menu = panel.getByRole('tab', { name: /^(Carta|Menú|Menu|Menus|Menús)$/i }).or(panel.getByRole('button', { name: /^(Carta|Menú|Menu|Menus|Menús)$/i })).first();
     try { await menu.waitFor({ state: 'visible', timeout: 7000 }); }
@@ -82,7 +83,7 @@ export async function collectMenu(page, source, listingUrl, { maxPhotos = 2, sho
       const text = await readPageText(page);
       const reportLink = await page.locator('a[href*="postId="]').first().getAttribute('href').catch(() => null);
       const photoId = reportLink?.match(/!2s([^!&]+)/)?.[1] ?? null;
-      const stored = await storePhoto({ source, bytes, provenance: {
+      const stored = await storePhoto({ root: photosRoot, source, bytes, provenance: {
         origen: 'Google Maps', url_ficha: listing, url_foto: page.url(), foto_id_maps: photoId,
         url_imagen: best.url(), fecha_foto_mostrada: text.match(/Foto\s*-\s*([^\n]+)/)?.[1] ?? null,
         metodo: 'Foto abierta desde la sección Carta/Menú; bytes de la respuesta observada del navegador.',

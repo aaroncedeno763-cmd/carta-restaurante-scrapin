@@ -1,5 +1,30 @@
 import { placeCoordinates } from './match-maps.js';
 
+const accessDenied = /tráfico inusual|unusual traffic|no soy un robot|not a robot|antes de ir|before you continue|captcha/i;
+
+function interrupted(message) {
+  return Object.assign(new Error(message), { interrupted: true });
+}
+
+export async function navigateMaps(page, url) {
+  let response;
+  try {
+    response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  } catch (error) {
+    if (/net::ERR_(TUNNEL_CONNECTION_FAILED|PROXY_CONNECTION_FAILED)/.test(error.message)) {
+      throw interrupted('No se pudo conectar a Maps a través del proxy.');
+    }
+    if (error.message.includes('net::ERR_BLOCKED_BY_ADMINISTRATOR')) {
+      throw interrupted('La política del navegador bloqueó la navegación a Maps.');
+    }
+    throw error;
+  }
+  const status = response?.status();
+  if ([401, 403, 429].includes(status)) throw interrupted(`Maps interrumpió el acceso: HTTP ${status}.`);
+  if (status >= 400) throw new Error(`Error de navegación en Maps: HTTP ${status}.`);
+  if (/\/sorry\//.test(page.url())) throw interrupted('Maps mostró una verificación de acceso.');
+}
+
 function parsePhone(value) {
   const text = String(value ?? '').replace(/^(Teléfono|Telefono|Phone|Telephone)\s*:\s*/i, '').replace(/^tel:/i, '').trim();
   const phone = text.match(/^\+?[\d\s()./-]+$/)?.[0]?.replace(/\s+/g, ' ');
@@ -15,12 +40,14 @@ export async function ready(page) {
   const reject = page.getByRole('button', { name: /^(Rechazar todo|Reject all)$/i }).first();
   try { await reject.waitFor({ state: 'visible', timeout: 2000 }); await reject.click(); }
   catch (error) { if (error.name !== 'TimeoutError') throw error; }
-  await page.waitForFunction(() => Boolean(document.querySelector('[role="feed"], h1, [data-item-id="address"]'))
-    || /No se han encontrado|No results|tráfico inusual|unusual traffic|Antes de ir|Before you continue|captcha/i.test(document.body.innerText), null, { timeout: 20000 });
+  await page.waitForFunction(blockPattern => Boolean(document.querySelector('[role="feed"], h1, [data-item-id="address"]'))
+    || /No se han encontrado|No results/i.test(document.body.innerText)
+    || new RegExp(blockPattern, 'i').test(document.body.innerText), accessDenied.source, { timeout: 20000 });
+  if (accessDenied.test(await readPageText(page))) throw interrupted('Maps mostró un aviso de acceso o de verificación.');
 }
 
 export async function candidateDetails(page, url) {
-  if (url !== page.url()) { await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 }); await ready(page); }
+  if (url !== page.url()) { await navigateMaps(page, url); await ready(page); }
   const addressControl = page.locator('[data-item-id="address"]').first();
   await addressControl.waitFor({ state: 'visible', timeout: 7000 }).catch(error => { if (error.name !== 'TimeoutError') throw error; });
   const name = await page.locator('h1').first().innerText();
@@ -51,16 +78,20 @@ export async function candidateDetails(page, url) {
         await page.keyboard.press('Escape');
       } else {
         shareUrl = await page.locator('input').evaluateAll(inputs => inputs.map(input => input.value).find(value => /^https:\/\/(maps\.app\.goo\.gl|goo\.gl|www\.google\.[^/]+\/maps)/.test(value)));
-        await page.goto(shareUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
+        await navigateMaps(page, shareUrl);
         await ready(page);
       }
       await page.locator('[data-item-id="address"]').first().waitFor({ state: 'visible', timeout: 7000 });
       if ((await page.locator('h1').first().innerText()) !== name) throw new Error('El enlace compartido abrió otra ficha.');
-    } catch (error) { shareError = error.message; await page.keyboard.press('Escape').catch(() => {}); }
+    } catch (error) {
+      if (error.interrupted) throw error;
+      shareError = error.message;
+      await page.keyboard.press('Escape').catch(() => {});
+    }
   }
   const text = await readPageText(page);
   const limited = /vista limitada|limited view/i.test(text);
-  const blocked = /tráfico inusual|unusual traffic|no soy un robot|not a robot/i.test(text) || /\/sorry\//.test(page.url());
+  const blocked = accessDenied.test(text) || /\/sorry\//.test(page.url());
   return { name, address: address.replace(/^(Dirección|Address):\s*/i, ''), category, phone, url: page.url(),
     coordinates: shareError ? null : placeCoordinates(page.url()), permanentlyClosed: /Cerrado permanentemente|Permanently closed/i.test(text), limited, blocked };
 }

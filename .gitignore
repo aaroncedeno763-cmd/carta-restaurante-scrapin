@@ -14,3 +14,8 @@ coverage/
 .DS_Store
 Thumbs.db
 /cartas/
+/cartas-obetenidas/
+/no encontrado/
+/faltan las cartas/
+/ambiguos/
+/data/recorrido-maps/ejecucion.lock

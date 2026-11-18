@@ -1,14 +1,10 @@
-import { readPageText, ready, candidateDetails } from './maps-page.js';
+import { navigateMaps, ready, candidateDetails } from './maps-page.js';
 import { assessCandidate } from './match-maps.js';
 
 export async function findRestaurant(page, item) {
   const result = { status: 'pendiente_revision', candidates: [] };
-  await page.goto(item.searchUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  await navigateMaps(page, item.searchUrl);
   await ready(page);
-  const text = await readPageText(page);
-  if (/tráfico inusual|unusual traffic|no soy un robot|not a robot|Antes de ir|Before you continue/i.test(text) || /\/sorry\//.test(page.url())) {
-    result.status = 'acceso_interrumpido'; return result;
-  }
   const feed = page.getByRole('feed').first();
   let urls;
   if (await feed.isVisible()) {
@@ -26,8 +22,12 @@ export async function findRestaurant(page, item) {
     if (candidate.blocked) { result.status = 'acceso_interrumpido'; return result; }
   }
   const probable = result.candidates.filter(c => c.assessment.status === 'coincidencia_probable');
+  const needsReview = result.candidateLimitReached || result.candidates.some(candidate => {
+    const { name, street, locality, coordinates } = candidate.assessment.checks;
+    return candidate.limited || (name && (street || locality || coordinates === true));
+  });
   result.status = probable.length === 1 && !result.candidateLimitReached ? 'coincidencia_probable'
-    : !result.candidates.length ? 'sin_coincidencia_confirmada' : 'pendiente_revision';
+    : needsReview ? 'pendiente_revision' : 'sin_coincidencia_confirmada';
   if (result.status === 'coincidencia_probable') result.probableUrl = probable[0].url;
   return result;
 }

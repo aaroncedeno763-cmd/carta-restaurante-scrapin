@@ -14,28 +14,34 @@ export async function saveJson(file, data) {
   finally { await rm(temp, { force: true }); }
 }
 
-export async function ensureRestaurantRecord(source, root = 'cartas', { phone } = {}) {
-  if (!/^[1-9]\d*$/.test(source.id)) throw new Error('ID de carpeta no válido.');
-  const file = path.join(root, source.id, 'restaurante.json');
-  const previous = await readJson(file, null);
-  if (previous && (previous._id !== source.id || previous.signatura !== source.signature)) throw new Error('La carpeta contiene datos de otro restaurante.');
-  await saveJson(file, { _id: source.id, signatura: source.signature, nombre: source.name, direccion: source.address,
-    municipio: source.municipality, localidad: source.locality, coordenadas: source.coordinates,
-    telefono: phone ?? previous?.telefono ?? null });
+export async function photoAvailability(id, signature, root) {
+  if (!/^[1-9]\d*$/.test(id)) throw new Error('ID de progreso no válido.');
+  const folder = path.join(root, id);
+  const metadata = await readJson(path.join(folder, 'procedencia.json'), null);
+  if (!metadata || metadata._id !== id || metadata.signatura !== signature || !Array.isArray(metadata.imagenes)) {
+    return { saved: 0, complete: false };
+  }
+  let saved = 0;
+  for (const image of metadata.imagenes) {
+    if (!/^carta-[a-f0-9]{64}\.(jpg|png)$/.test(image.archivo)) throw new Error('Nombre de foto guardada no válido.');
+    try { await access(path.join(folder, image.archivo)); saved++; }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+  }
+  return { saved, complete: saved > 0 && saved === metadata.imagenes.length };
 }
 
-export async function reconcileMissingPhotos(state, root = 'cartas') {
+export async function reconcileMissingPhotos(state, roots = ['cartas']) {
+  const folders = Array.isArray(roots) ? roots : [roots];
   for (const [id, item] of Object.entries(state.items)) {
     if (!item.status.startsWith('cartas_recopiladas')) continue;
-    if (!/^[1-9]\d*$/.test(id)) throw new Error('ID de progreso no válido.');
-    const metadata = await readJson(path.join(root, id, 'procedencia.json'), null);
-    let missing = !metadata || metadata._id !== id || metadata.signatura !== item.signature || !metadata.imagenes?.length;
-    if (!missing) for (const image of metadata.imagenes) {
-      if (!/^carta-[a-f0-9]{64}\.(jpg|png)$/.test(image.archivo)) throw new Error('Nombre de foto guardada no válido.');
-      try { await access(path.join(root, id, image.archivo)); }
-      catch (error) { if (error.code !== 'ENOENT') throw error; missing = true; break; }
+    let complete = false;
+    for (const root of folders) {
+      if ((await photoAvailability(id, item.signature, root)).complete) {
+        complete = true;
+        break;
+      }
     }
-    if (missing) item.status = 'en_proceso';
+    if (!complete) item.status = 'en_proceso';
   }
   return state;
 }

@@ -4,14 +4,14 @@ Proyecto en JavaScript con Node.js y Playwright, usando Chrome y sin Serper. Bus
 
 ## Entorno y datos
 
-Requiere Node.js 22 o superior y Chrome instalado.
+Requiere Node.js 22 o superior y Google Chrome instalado. En Linux, ambos comandos de Maps necesitan una sesión gráfica y pueden usar Chromium del sistema si Chrome no está instalado. Si el navegador está en una ruta distinta, configura `MAPS_BROWSER_EXECUTABLE` con la ruta al ejecutable antes de lanzar cualquiera de los dos comandos. Usa el mismo navegador para iniciar sesión y recorrer Maps.
 
 ```powershell
 npm ci
 npm run importar
 ```
 
-La fuente local `establecimientos.geojson` contiene 10.612 establecimientos. La importación conserva el original y selecciona `Grup=Restaurant` y `Estat=Alta`: 4.266 restaurantes. Genera `data/restaurantes-con-ids.geojson`.
+La fuente local `establecimientos.geojson` contiene 10.612 establecimientos. La importación conserva el original y selecciona `Grup=Restaurant` y `Estat=Alta`: 4.266 restaurantes. Genera `data/restaurantes-con-ids.geojson`. El recorrido lee `data/restaurantes-con-ids.json` si existe, o el GeoJSON versionado con el mismo nombre base. Ambos usan el formato GeoJSON y el recorrido solo incluye restaurantes activos de municipios de Mallorca.
 
 `data/ids.json` se copió del proyecto anterior y mantiene la relación entre `Signatura` e `_id`. Si falta, la importación se detiene. No lo borres ni reasignes los IDs. Conserva una copia de seguridad: los datos locales no se recuperan clonando Git. El proyecto anterior no se modifica.
 
@@ -24,6 +24,8 @@ npm run iniciar:maps
 Abre Chrome visible con un perfil exclusivo en `browser-profile/chrome/`. Inicia sesión manualmente con la cuenta del proyecto y completa las verificaciones de Google. No necesitas activar la sincronización de Chrome. Cierra esa ventana antes de ejecutar el recorrido para liberar el perfil y guardar la sesión.
 
 El recorrido utiliza Chrome visible: en las pruebas, el modo sin ventana seguía mostrando la vista limitada. No utiliza tu perfil habitual. No compartas contraseñas, códigos ni perfiles del navegador.
+
+Si ejecutas el proyecto en la nube, comprueba primero que la red del entorno permite abrir `https://www.google.com/maps` y que puedes abrir el navegador desde un escritorio. Un rechazo del proxy impide que el navegador llegue a Maps.
 
 ## Recorrido completo
 
@@ -92,9 +94,16 @@ Los cambios en los datos del restaurante o en el límite de fotos lo hacen elegi
 
 Ctrl+C solicita detenerse al terminar la operación en curso y guardar el progreso. Los avisos detectados de CAPTCHA, tráfico inusual o denegación de descargas detienen el lote; no se resuelven automáticamente. Los errores ordinarios quedan registrados y el lote continúa. Hay hasta tres intentos de recuperación de un recurso de imagen observado si falla la lectura de su respuesta; las búsquedas no se repiten automáticamente.
 
-### Archivos de fotos
+### Carpetas de resultados
 
-Al procesar un restaurante se crea `cartas/<_id>/restaurante.json` con sus datos originales y su ID, aunque todavía no se haya encontrado una carta. Las imágenes se guardan en `cartas/<_id>/carta-<sha256>.jpg` y su procedencia en `cartas/<_id>/procedencia.json`.
+Cada resultado se guarda en una subcarpeta con el ID del restaurante y un `restaurante.json` con sus datos.
+
+- `cartas-obetenidas/<_id>/` contiene las fotos de la carta y su `procedencia.json`.
+- `no encontrado/<_id>/` contiene los restaurantes para los que la búsqueda no encontró una ficha plausible.
+- `faltan las cartas/<_id>/` contiene las fichas identificadas en las que no se vio una sección o fotos de carta.
+- `ambiguos/<_id>/` contiene los casos con varias fichas posibles o con evidencia insuficiente para confirmar la identidad.
+
+Al ejecutar el recorrido, también se organizan los resultados del progreso existente. Las fotos anteriores de `cartas/` se trasladan con su procedencia y se conservan si una repetición no encuentra una carta. Los estados antiguos de revisión se guardan en `ambiguos/` hasta repetir esos IDs si hace falta. Un error de acceso o una interrupción queda en el progreso para poder reintentar.
 
 Cuando se encuentra una ficha que supera la comprobación, se guarda también su número en el campo `telefono` de `restaurante.json`, tal como lo muestra Maps. Si no se observa un teléfono, queda `null`; si ya había uno guardado, se conserva. Se recoge aunque la ficha no exponga fotos de carta. Para añadirlo a restaurantes procesados anteriormente, selecciónalos con `--ids` y `--repeat`; las fotos existentes no se duplican.
 
@@ -106,4 +115,4 @@ La huella evita duplicados idénticos y el ID de foto evita guardar de nuevo una
 
 ## Datos locales
 
-Git excluye la fuente, `data/`, `cartas/`, `.env`, perfiles del navegador y dependencias. Se versionan código, configuración y documentación. La extracción del texto de las cartas a JSON corresponde a una fase posterior.
+Git excluye la fuente, las carpetas de resultados, `.env`, perfiles del navegador y dependencias. La extracción del texto de las cartas a JSON corresponde a una fase posterior.
