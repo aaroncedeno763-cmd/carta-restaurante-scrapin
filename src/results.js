@@ -2,13 +2,14 @@ import { lstat, mkdir, readdir, rename, rm, rmdir } from 'node:fs/promises';
 import path from 'node:path';
 import { photoAvailability, readJson, saveJson } from './storage.js';
 
-export const photosRoot = 'cartas-obetenidas';
 const legacyRoot = 'cartas';
-const notFound = 'no encontrado';
-const missingMenu = 'faltan las cartas';
-const ambiguous = 'ambiguos';
+const previousPhotosRoot = 'cartas-obetenidas';
+export const photosRoot = path.join(legacyRoot, previousPhotosRoot);
+const notFound = path.join(legacyRoot, 'no encontrado');
+const missingMenu = path.join(legacyRoot, 'faltan las cartas');
+const ambiguous = path.join(legacyRoot, 'ambiguos');
 const resultRoots = [photosRoot, notFound, missingMenu, ambiguous];
-export const photoRoots = [photosRoot, legacyRoot];
+export const photoRoots = [photosRoot, previousPhotosRoot, legacyRoot];
 const recordName = 'restaurante.json';
 
 const rootsByStatus = new Map([
@@ -19,7 +20,29 @@ const rootsByStatus = new Map([
 ]);
 
 export async function prepareResultFolders() {
-  await Promise.all(resultRoots.map(root => mkdir(root, { recursive: true })));
+  for (const root of resultRoots) {
+    await mkdir(root, { recursive: true });
+    const previousRoot = path.basename(root);
+    const entries = await readdir(previousRoot, { withFileTypes: true }).catch(error => {
+      if (error.code === 'ENOENT') return null;
+      throw error;
+    });
+    if (!entries) continue;
+    for (const entry of entries) {
+      if (!entry.isDirectory() || !/^[1-9]\d*$/.test(entry.name)) continue;
+      const from = path.join(previousRoot, entry.name);
+      const to = path.join(root, entry.name);
+      const existing = await lstat(to).catch(error => {
+        if (error.code === 'ENOENT') return null;
+        throw error;
+      });
+      if (existing) throw new Error(`Ya existen ${from} y ${to}. Revisa ambas carpetas antes de continuar.`);
+      await rename(from, to);
+    }
+    await rmdir(previousRoot).catch(error => {
+      if (error.code !== 'ENOTEMPTY') throw error;
+    });
+  }
 }
 
 export async function saveRestaurantOutcome(source, status, { phone, reason, listing } = {}) {

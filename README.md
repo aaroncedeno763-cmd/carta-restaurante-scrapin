@@ -98,12 +98,12 @@ Ctrl+C solicita detenerse al terminar la operación en curso y guardar el progre
 
 Cada resultado se guarda en una subcarpeta con el ID del restaurante y un `restaurante.json` con sus datos.
 
-- `cartas-obetenidas/<_id>/` contiene las fotos de la carta y su `procedencia.json`.
-- `no encontrado/<_id>/` contiene los restaurantes para los que la búsqueda no encontró una ficha plausible.
-- `faltan las cartas/<_id>/` contiene las fichas identificadas en las que no se vio una sección o fotos de carta.
-- `ambiguos/<_id>/` contiene los casos con varias fichas posibles o con evidencia insuficiente para confirmar la identidad.
+- `cartas/cartas-obetenidas/<_id>/` contiene las fotos de la carta y su `procedencia.json`.
+- `cartas/no encontrado/<_id>/` contiene los restaurantes para los que la búsqueda no encontró una ficha plausible.
+- `cartas/faltan las cartas/<_id>/` contiene las fichas identificadas en las que no se vio una sección o fotos de carta.
+- `cartas/ambiguos/<_id>/` contiene los casos con varias fichas posibles o con evidencia insuficiente para confirmar la identidad.
 
-Al ejecutar el recorrido, también se organizan los resultados del progreso existente. Las fotos anteriores de `cartas/` se trasladan con su procedencia y se conservan si una repetición no encuentra una carta. Los estados antiguos de revisión se guardan en `ambiguos/` hasta repetir esos IDs si hace falta. Un error de acceso o una interrupción queda en el progreso para poder reintentar.
+Al ejecutar el recorrido, se trasladan a `cartas/` los restaurantes de las categorías que antes estaban en la raíz. Las fotos guardadas directamente en `cartas/<_id>/` se trasladan con su procedencia y se conservan si una repetición no encuentra una carta. Los estados antiguos de revisión se guardan en `cartas/ambiguos/` hasta repetir esos IDs si hace falta. Un error de acceso o una interrupción queda en el progreso para poder reintentar.
 
 Cuando se encuentra una ficha que supera la comprobación, se guarda también su número en el campo `telefono` de `restaurante.json`, tal como lo muestra Maps. Si no se observa un teléfono, queda `null`; si ya había uno guardado, se conserva. Se recoge aunque la ficha no exponga fotos de carta. Para añadirlo a restaurantes procesados anteriormente, selecciónalos con `--ids` y `--repeat`; las fotos existentes no se duplican.
 
