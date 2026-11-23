@@ -1,4 +1,4 @@
-import { candidateDetails, navigateMaps, readPageText, ready } from './maps-page.js';
+import { assertMapsAccess, candidateDetails, navigateMaps, readPageText, ready } from './maps-page.js';
 import { assessCandidate } from './match-maps.js';
 import { storePhoto } from './storage.js';
 import { photosRoot } from './results.js';
@@ -41,7 +41,6 @@ async function bytesFromResponse(response, context) {
 export async function collectMenu(page, source, listingUrl, { maxPhotos = 2, shouldStop = () => false } = {}) {
   const candidate = await candidateDetails(page, listingUrl);
   const assessment = assessCandidate(source, candidate);
-  if (candidate.blocked) return { status: 'acceso_interrumpido', photos: [] };
   if (candidate.limited || assessment.status !== 'coincidencia_probable') return { status: 'pendiente_revision', photos: [], revalidation: assessment };
   const result = { status: 'sin_fotos_de_menu_en_esta_vista', photos: [], revalidation: assessment, identity: 'coincidencia_probable' };
   const listing = candidate.url;
@@ -50,20 +49,29 @@ export async function collectMenu(page, source, listingUrl, { maxPhotos = 2, sho
     const panel = page.getByRole('main');
     const menu = panel.getByRole('tab', { name: /^(Carta|Menú|Menu|Menus|Menús)$/i }).or(panel.getByRole('button', { name: /^(Carta|Menú|Menu|Menus|Menús)$/i })).first();
     try { await menu.waitFor({ state: 'visible', timeout: 7000 }); }
-    catch (error) { if (error.name !== 'TimeoutError') throw error; result.status = 'sin_seccion_menu_en_esta_vista'; break; }
+    catch (error) {
+      if (error.name !== 'TimeoutError') throw error;
+      await assertMapsAccess(page);
+      result.status = 'sin_seccion_menu_en_esta_vista';
+      break;
+    }
     await menu.click();
     const region = panel.getByRole('region', { name: /^(Menú|Menu|Carta)$/i }).first();
     await region.waitFor({ state: 'visible', timeout: 10000 });
     const photo = region.getByRole('button', { name: new RegExp(`^(Foto|Photo) ${index} (de|of) \\d+$`, 'i') }).first();
     try { await photo.waitFor({ state: 'attached', timeout: 3000 }); }
-    catch (error) { if (error.name !== 'TimeoutError') throw error; break; }
+    catch (error) {
+      if (error.name !== 'TimeoutError') throw error;
+      await assertMapsAccess(page);
+      break;
+    }
     result.menuPhotoCount = Number((await photo.getAttribute('aria-label')).match(/(\d+)$/)?.[1]);
     if (index > result.menuPhotoCount) break;
     const responses = [];
-    let denied = false;
+    let deniedStatus;
     const listener = response => {
       if (!viewerImage(response.url())) return;
-      if ([401,403,429].includes(response.status())) denied = true;
+      if ([401,403,429].includes(response.status())) deniedStatus = response.status();
       if (response.ok() && response.headers()['content-type']?.startsWith('image/')) responses.push(response);
     };
     page.on('response', listener);
@@ -93,8 +101,10 @@ export async function collectMenu(page, source, listingUrl, { maxPhotos = 2, sho
       result.status = 'cartas_recopiladas_pendientes_revision_visual';
       console.log(JSON.stringify({ id: source.id, photo: index, duplicate: stored.duplicate, file: stored.file }));
     } catch (error) {
-      const text = await page.locator('body').innerText().catch(() => '');
-      if (denied || /tráfico inusual|unusual traffic|no soy un robot|not a robot/i.test(text) || /\/sorry\//.test(page.url())) error.interrupted = true;
+      if (!error.interrupted) {
+        if (deniedStatus) throw Object.assign(new Error(`Acceso interrumpido al descargar: HTTP ${deniedStatus}`), { interrupted: true });
+        await assertMapsAccess(page).catch(accessError => { if (accessError.interrupted) throw accessError; });
+      }
       throw error;
     } finally { page.off('response', listener); }
   }

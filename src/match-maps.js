@@ -49,7 +49,6 @@ export function searchExplanation(search) {
   if (search.candidateLimitReached) return 'Hay varios candidatos; no se puede elegir una ficha con certeza.';
   const labels = { name: 'nombre diferente', street: 'calle diferente', number: 'número ausente o diferente', locality: 'municipio o localidad diferente', coordinates: 'coordenadas ausentes o a más de 100 m', restaurantCategory: 'categoría no compatible', open: 'cierre permanente', incompleteAddress: 'dirección sin número fiable' };
   const best = [...search.candidates].sort((a,b) => a.assessment.reasons.length - b.assessment.reasons.length)[0];
-  if (best.blocked) return 'Maps ha interrumpido el acceso.';
   if (best.limited) return 'Maps está mostrando una vista limitada.';
   const reasons = best.assessment.reasons.map(reason => labels[reason] ?? reason);
   return reasons.length ? `Sin descarga: ${reasons.join('; ')}.` : 'Hay más de una coincidencia posible.';

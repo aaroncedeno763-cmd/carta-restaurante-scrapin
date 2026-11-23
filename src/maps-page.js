@@ -1,9 +1,39 @@
 import { placeCoordinates } from './match-maps.js';
 
-const accessDenied = /tráfico inusual|unusual traffic|no soy un robot|not a robot|antes de ir|before you continue|captcha/i;
+const accessMessages = {
+  consent: 'Maps mostró un aviso de consentimiento de Google.',
+  traffic: 'Maps mostró un aviso de tráfico inusual.',
+  verification: 'Maps mostró una verificación de acceso o CAPTCHA.',
+};
 
 function interrupted(message) {
   return Object.assign(new Error(message), { interrupted: true });
+}
+
+function inspectMapsPage() {
+  if (location.hostname === 'consent.google.com') return 'consent';
+  if (/^\/sorry(?:\/|$)/.test(location.pathname)) return 'verification';
+  const visible = element => element.getClientRects().length > 0 && getComputedStyle(element).visibility === 'visible';
+  const pageItems = [...document.querySelectorAll('[role="feed"], [data-item-id="address"]')].some(visible);
+  const prompts = [...document.querySelectorAll('h1, h2, [role="heading"], [role="alert"], [role="dialog"], [role="alertdialog"]')]
+    .filter(visible).map(element => element.innerText);
+  const body = document.body?.innerText ?? '';
+  if (!pageItems) prompts.push(body);
+
+  if (prompts.some(text => /antes de ir a google|before you continue to google/i.test(text))) return 'consent';
+  if (prompts.some(text => /tráfico inusual|unusual traffic/i.test(text))) return 'traffic';
+  const hasChallenge = [...document.querySelectorAll(
+    '#captcha-form, form[action^="/sorry/"], iframe[src*="/recaptcha/"][src*="/anchor"]:not([src*="size=invisible"])',
+  )].some(visible);
+  if (hasChallenge || prompts.some(text =>
+    /\b(?:no soy un robot|not a robot)\b|^captcha$/im.test(text)
+    || /(?:resuelve|completa|complete|solve)\s+(?:el |the )?captcha\b/i.test(text))) return 'verification';
+  if (pageItems || document.querySelector('h1') || /No se han encontrado|No results/i.test(body)) return 'ready';
+  return null;
+}
+
+function checkAccessState(state) {
+  if (Object.hasOwn(accessMessages, state)) throw interrupted(accessMessages[state]);
 }
 
 export async function navigateMaps(page, url) {
@@ -22,7 +52,7 @@ export async function navigateMaps(page, url) {
   const status = response?.status();
   if ([401, 403, 429].includes(status)) throw interrupted(`Maps interrumpió el acceso: HTTP ${status}.`);
   if (status >= 400) throw new Error(`Error de navegación en Maps: HTTP ${status}.`);
-  if (/\/sorry\//.test(page.url())) throw interrupted('Maps mostró una verificación de acceso.');
+  if (/^\/sorry(?:\/|$)/.test(new URL(page.url()).pathname)) throw interrupted(accessMessages.verification);
 }
 
 function parsePhone(value) {
@@ -36,18 +66,22 @@ export async function readPageText(page) {
   return page.locator('body').innerText();
 }
 
+export async function assertMapsAccess(page) {
+  checkAccessState(await page.evaluate(inspectMapsPage));
+}
+
 export async function ready(page) {
   const reject = page.getByRole('button', { name: /^(Rechazar todo|Reject all)$/i }).first();
   try { await reject.waitFor({ state: 'visible', timeout: 2000 }); await reject.click(); }
   catch (error) { if (error.name !== 'TimeoutError') throw error; }
-  await page.waitForFunction(blockPattern => Boolean(document.querySelector('[role="feed"], h1, [data-item-id="address"]'))
-    || /No se han encontrado|No results/i.test(document.body.innerText)
-    || new RegExp(blockPattern, 'i').test(document.body.innerText), accessDenied.source, { timeout: 20000 });
-  if (accessDenied.test(await readPageText(page))) throw interrupted('Maps mostró un aviso de acceso o de verificación.');
+  const state = await page.waitForFunction(inspectMapsPage, null, { timeout: 20000 });
+  try { checkAccessState(await state.jsonValue()); }
+  finally { await state.dispose(); }
 }
 
 export async function candidateDetails(page, url) {
   if (url !== page.url()) { await navigateMaps(page, url); await ready(page); }
+  await assertMapsAccess(page);
   const addressControl = page.locator('[data-item-id="address"]').first();
   await addressControl.waitFor({ state: 'visible', timeout: 7000 }).catch(error => { if (error.name !== 'TimeoutError') throw error; });
   const name = await page.locator('h1').first().innerText();
@@ -90,9 +124,9 @@ export async function candidateDetails(page, url) {
     }
   }
   const text = await readPageText(page);
+  await assertMapsAccess(page);
   const limited = /vista limitada|limited view/i.test(text);
-  const blocked = accessDenied.test(text) || /\/sorry\//.test(page.url());
   return { name, address: address.replace(/^(Dirección|Address):\s*/i, ''), category, phone, url: page.url(),
-    coordinates: shareError ? null : placeCoordinates(page.url()), permanentlyClosed: /Cerrado permanentemente|Permanently closed/i.test(text), limited, blocked };
+    coordinates: shareError ? null : placeCoordinates(page.url()), permanentlyClosed: /Cerrado permanentemente|Permanently closed/i.test(text), limited };
 }
 

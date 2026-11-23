@@ -17,9 +17,8 @@ export async function findRestaurant(page, item) {
   for (const url of urls) {
     const candidate = await candidateDetails(page, url);
     candidate.assessment = assessCandidate(item.source, candidate);
-    if (candidate.limited || candidate.blocked) candidate.assessment.status = 'pendiente_revision';
+    if (candidate.limited) candidate.assessment.status = 'pendiente_revision';
     result.candidates.push(candidate);
-    if (candidate.blocked) { result.status = 'acceso_interrumpido'; return result; }
   }
   const probable = result.candidates.filter(c => c.assessment.status === 'coincidencia_probable');
   const needsReview = result.candidateLimitReached || result.candidates.some(candidate => {
