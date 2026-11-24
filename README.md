@@ -54,9 +54,12 @@ No combina `--all` con `--limit` o `--ids`. Mantiene la pausa entre restaurantes
 Para seleccionar una muestra o ajustar los límites:
 
 ```powershell
+npm run recorrer -- --all --desde-id 3500 --hasta-id 4266 --max-fotos 4 --execute
 npm run recorrer -- --ids 14,23 --execute
 npm run recorrer -- --limit 10 --max-fotos 4 --execute
 ```
+
+`--desde-id 3500 --hasta-id 4266` recorre los IDs pendientes en ese intervalo, en orden numérico y con ambos extremos incluidos. Puedes indicar cualquiera de los dos límites y combinar el intervalo con `--all` o `--limit`.
 
 `--ids` admite IDs activos distintos y no puede superar `--limit`. `--max-fotos` admite de 1 a 10 fotos por restaurante, con valor inicial 2. No garantiza que la carta esté completa. Aumentar el límite de fotos permite ampliar lo recogido en ejecuciones posteriores.
 

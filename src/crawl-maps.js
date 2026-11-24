@@ -23,13 +23,21 @@ function compactProgress(state) {
   }])) };
 }
 
-function selectPending(items, state, { limit, maxPhotos, ids, repeat, retryErrors, all = false }) {
+function selectPending(items, state, { limit, maxPhotos, ids, fromId, toId, repeat, retryErrors, all = false }) {
   if (!Number.isSafeInteger(limit) || limit < 1 || limit > 25) throw new Error('--limit debe estar entre 1 y 25.');
   if (!Number.isSafeInteger(maxPhotos) || maxPhotos < 1 || maxPhotos > 10) throw new Error('--max-fotos debe estar entre 1 y 10.');
   if (repeat && !ids) throw new Error('--repeat requiere una selección explícita con --ids.');
   if (all && ids) throw new Error('--all no se combina con --ids.');
   if (ids && (!ids.length || ids.length > limit || new Set(ids).size !== ids.length || ids.some(id => !/^[1-9]\d*$/.test(id) || !items.some(item => item.source.id === id)))) throw new Error('--ids debe contener IDs activos distintos, sin superar --limit.');
-  const scope = ids ? ids.map(id => items.find(item => item.source.id === id)) : items;
+  let scope = items;
+  if (ids) {
+    scope = ids.map(id => items.find(item => item.source.id === id));
+  } else if (fromId !== undefined || toId !== undefined) {
+    scope = items.filter(({ source }) => {
+      const id = Number(source.id);
+      return id >= (fromId ?? 1) && id <= (toId ?? Infinity);
+    }).sort((left, right) => Number(left.source.id) - Number(right.source.id));
+  }
   const pending = scope.map(item => ({ ...item, requestHash: hash(JSON.stringify({ version, matchingVersion, item, maxPhotos })) })).filter(item => {
     const previous = state.items[item.source.id];
     return repeat || !previous || previous.requestHash !== item.requestHash || previous.status === 'en_proceso'
@@ -63,18 +71,35 @@ async function loadItems() {
 
 async function main() {
   const { values } = parseArgs({ options: {
-    ids: { type: 'string' }, limit: { type: 'string', default: '5' },
+    ids: { type: 'string' }, 'desde-id': { type: 'string' }, 'hasta-id': { type: 'string' },
+    limit: { type: 'string', default: '5' },
     'max-fotos': { type: 'string', default: '2' }, execute: { type: 'boolean', default: false },
     'retry-errors': { type: 'boolean', default: false }, repeat: { type: 'boolean', default: false },
     all: { type: 'boolean', default: false },
     help: { type: 'boolean', default: false },
   } });
   if (values.help) {
-    console.log('Uso: npm run recorrer -- [--ids 14,23 | --all] [--limit 5] [--max-fotos 2] [--execute] [--retry-errors] [--repeat]\nSin --execute solo simula. --all recorre todos los pendientes; sin él procesa hasta 25. Chrome visible. --repeat requiere IDs explícitos.'); return;
+    console.log('Uso: npm run recorrer -- [--ids 14,23 | --desde-id 3500 --hasta-id 4266] [--all | --limit 5] [--max-fotos 2] [--execute] [--retry-errors] [--repeat]\nSin --execute solo simula. --all recorre todos los pendientes; sin él procesa hasta 25. Los límites de ID son inclusivos. Chrome visible. --repeat requiere IDs explícitos.'); return;
+  }
+  if (values.all && process.argv.some(arg => arg === '--limit' || arg.startsWith('--limit='))) throw new Error('Elige --all o --limit, no ambos.');
+  for (const option of ['desde-id', 'hasta-id']) {
+    const value = values[option];
+    if (value !== undefined && (!/^[1-9]\d*$/.test(value) || !Number.isSafeInteger(Number(value)))) {
+      throw new Error(`--${option} debe ser un ID entero positivo.`);
+    }
+  }
+  const fromId = values['desde-id'] === undefined ? undefined : Number(values['desde-id']);
+  const toId = values['hasta-id'] === undefined ? undefined : Number(values['hasta-id']);
+  if (fromId > toId) throw new Error('--desde-id debe ser menor o igual que --hasta-id.');
+  if ((fromId !== undefined || toId !== undefined) && values.ids !== undefined) {
+    throw new Error('Elige un intervalo de IDs o --ids, no ambos.');
   }
   const items = await loadItems();
-  if (values.all && process.argv.some(arg => arg === '--limit' || arg.startsWith('--limit='))) throw new Error('Elige --all o --limit, no ambos.');
-  const options = { ids: values.ids?.split(','), limit: Number(values.limit), maxPhotos: Number(values['max-fotos']), repeat: values.repeat, retryErrors: values['retry-errors'], all: values.all };
+  const options = {
+    ids: values.ids?.split(','), fromId, toId,
+    limit: Number(values.limit), maxPhotos: Number(values['max-fotos']),
+    repeat: values.repeat, retryErrors: values['retry-errors'], all: values.all,
+  };
   if (!values.execute) {
     const state = await reconcileMissingPhotos(compactProgress(await readJson(stateFile, { version, items: {} })), photoRoots);
     const selection = selectPending(items, state, options);
