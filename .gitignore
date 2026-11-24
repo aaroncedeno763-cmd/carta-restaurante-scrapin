@@ -1,21 +1,8 @@
+
 node_modules/
-.npm-cache/
 .env
-.env.*
-!.env.example
-/establecimientos.geojson
-/browser-profile/
-/playwright/.auth/
-/test-results/
-/playwright-report/
-logs/
-coverage/
+cartas encontradas/
+resultados/
 *.log
 .DS_Store
 Thumbs.db
-/cartas/
-/cartas-obetenidas/
-/no encontrado/
-/faltan las cartas/
-/ambiguos/
-/data/recorrido-maps/ejecucion.lock
