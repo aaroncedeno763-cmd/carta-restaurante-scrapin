@@ -1,8 +1,8 @@
-
+cartas
 node_modules/
 .env
-cartas encontradas/
 resultados/
 *.log
 .DS_Store
 Thumbs.db
+browser-profile
